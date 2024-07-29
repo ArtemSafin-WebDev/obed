@@ -1,0 +1,54 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 120%;
+}
+
+.pagination__prev {
+  color: #6f6f6f;
+  font-weight: 700;
+  &:link,
+  &:visited {
+    color: #6f6f6f;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+  &::before {
+    content: "<";
+  }
+}
+.pagination__next {
+  color: #6f6f6f;
+  &:link,
+  &:visited {
+    color: #6f6f6f;
+  }
+  @media (hover: hover) {
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+  &::before {
+    content: ">";
+  }
+}
+
+.pagination__links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--primary-color);
+
+  a.current {
+    font-weight: 700;
+    color: black;
+  }
+}

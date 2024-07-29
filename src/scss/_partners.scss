@@ -1,0 +1,145 @@
+.partners {
+  @include blockWrapper;
+  margin-bottom: 9rem;
+
+  @include breakpoint(small-tablet) {
+    margin-bottom: 5rem;
+  }
+}
+
+.partners__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.partners__slider {
+  margin-top: 5.8rem;
+  position: relative;
+
+  @include breakpoint(small-tablet) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .swiper-slide {
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.partners__slider-wrapper {
+  @include breakpoint(small-tablet) {
+    width: 50%;
+    flex-grow: 1;
+  }
+}
+
+.partners__slider-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.partners__slider-card-image-container {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  @include breakpoint(small-tablet) {
+    max-width: 85%;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.partners__slider-card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.partners__slider-card-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 140%;
+  text-align: center;
+  margin-top: 1rem;
+
+  @include breakpoint(small-tablet) {
+    margin-top: 0.2rem;
+  }
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 140%;
+  }
+}
+
+.partners__slider-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: 5rem;
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 40;
+  @include breakpoint(small-tablet) {
+    position: static;
+    // transform: none;
+    flex-shrink: 0;
+    margin-top: 8.5%;
+    align-self: flex-start;
+  }
+
+  @include breakpoint(mobile) {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 16%;
+    border-width: 1px;
+  }
+
+  &--prev {
+    right: 100%;
+    margin-right: 8rem;
+
+    @include breakpoint(small-tablet) {
+      margin-right: 0;
+      right: auto;
+      left: 0;
+    }
+  }
+
+  &--next {
+    left: 100%;
+    margin-left: 8rem;
+
+    @include breakpoint(small-tablet) {
+      margin-left: 0;
+      left: auto;
+      right: 0;
+    }
+  }
+
+  svg {
+    fill: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,136 @@
+.healthy-menu {
+  @include blockWrapper;
+  margin-bottom: 8.5rem;
+
+  @include breakpoint(small-tablet) {
+    margin-bottom: 3rem;
+  }
+}
+
+.healthy-menu__content {
+  @include blockContent;
+}
+
+.healthy-menu__list {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 3rem;
+
+  @include breakpoint(small-tablet) {
+    grid-gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  @include breakpoint(mobile) {
+    margin-top: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 2rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+.healthy-menu__list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.healthy-menu__card {
+  display: flex;
+  flex-direction: column;
+
+  @media (hover: hover) {
+    &:hover {
+      .healthy-menu__card-image-container::after {
+        border-color: var(--primary-color);
+      }
+
+      .healthy-menu__card-title {
+        text-decoration-color: currentColor;
+      }
+    }
+  }
+}
+
+.healthy-menu__card-image-container {
+  width: 24rem;
+  position: relative;
+  align-self: center;
+  max-width: 100%;
+
+  @include breakpoint(small-tablet) {
+    width: 100%;
+  }
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  &::after {
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16rem;
+    height: 16rem;
+    border: 1.2rem solid var(--light-green);
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    transition: border-color 0.2s;
+    border-radius: 50%;
+
+    @include breakpoint(small-tablet) {
+      width: 14rem;
+      height: 14rem;
+    }
+
+    @include breakpoint(mobile) {
+      width: 10.8rem;
+      height: 10.8rem;
+      border: 1rem solid var(--light-green);
+    }
+  }
+}
+
+.healthy-menu__card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.healthy-menu__card-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s;
+  margin-top: -2.5rem;
+
+  @include breakpoint(small-tablet) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 120%;
+    margin-top: -0.5rem;
+  }
+}

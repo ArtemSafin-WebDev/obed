@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #007c0c;
+  --light-green: #8cc842;
+  --text-color: #151716;
+
+  --bg: white;
+  --noto-sans: "Noto Sans", sans-serif;
+  --inter: "Inter", sans-serif;
+  --content-padding: 4rem;
+  --container-width: 120rem;
+
+  @include breakpoint(small-tablet) {
+    --content-padding: 2.4rem;
+  }
+
+  @include breakpoint(mobile) {
+    --content-padding: 1.5rem;
+  }
+}

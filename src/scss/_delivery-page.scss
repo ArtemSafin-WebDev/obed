@@ -1,0 +1,143 @@
+.delivery-page {
+  @include blockWrapper;
+}
+.delivery-page__content {
+  @include blockContent;
+}
+
+.delivery-page__inner {
+  padding-top: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8rem;
+
+  @include breakpoint(small-tablet) {
+    padding-top: 0.7rem;
+    padding-bottom: 8rem;
+  }
+
+  @include breakpoint(mobile) {
+    .delivery__card-image-container::before {
+      padding-bottom: 79.2%;
+    }
+  }
+
+  .delivery__list {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.delivery-page__heading {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 120%;
+  padding-bottom: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 5.8rem;
+  position: relative;
+
+  @include breakpoint(small-tablet) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 120%;
+    margin-bottom: 5.3rem;
+  }
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 120%;
+    padding-bottom: 2.8rem;
+    margin-bottom: 4rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 9rem;
+    height: 0.3rem;
+    background-color: var(--primary-color);
+  }
+}
+
+.delivery-page__bottom-block {
+  margin-top: 8.7rem;
+  position: relative;
+  padding-top: 6.6rem;
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(small-tablet) {
+    padding-top: 5rem;
+    margin-top: 5.8rem;
+  }
+
+  @include breakpoint(mobile) {
+    margin-top: 4.6rem;
+  }
+  &::before {
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #cbd3d9;
+    position: absolute;
+    pointer-events: none;
+    width: 100vw;
+  }
+}
+
+.delivery-page__text-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+  }
+
+  p {
+    margin-top: 1.5rem;
+
+    @include breakpoint(mobile) {
+      margin-top: 1rem;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.delivery-page__back-link {
+  align-self: flex-start;
+  padding: 1.2rem 2.4rem;
+  text-align: center;
+  flex-shrink: 0;
+  border: 2px solid var(--primary-color);
+  transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 120%;
+  margin-top: 5rem;
+  border-radius: 5rem;
+
+  @include breakpoint(mobile) {
+    margin-top: 3.5rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+  }
+}

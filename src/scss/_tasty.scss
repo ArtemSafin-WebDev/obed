@@ -1,0 +1,151 @@
+.tasty {
+  @include blockWrapper;
+  margin-bottom: 9rem;
+
+  @include breakpoint(small-tablet) {
+    margin-bottom: 6rem;
+  }
+
+  .heading-block {
+    max-width: calc(50% - 3rem / 2);
+    text-align: left;
+    align-items: flex-start;
+
+    @include breakpoint(small-tablet) {
+      padding-bottom: 3.3rem;
+    }
+
+    @include breakpoint(mobile) {
+      padding-bottom: 3.3rem;
+      max-width: none;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 3.2rem;
+    }
+
+    &::before {
+      transform: none;
+      left: 0;
+
+      @include breakpoint(mobile) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .heading-block__title {
+    text-wrap: balance;
+
+    @include breakpoint(small-tablet) {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.2rem;
+      line-height: 120%;
+    }
+
+    @include breakpoint(mobile) {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.2rem;
+      line-height: 120%;
+    }
+  }
+}
+
+.tasty__content {
+  @include blockContent;
+}
+
+.tasty__row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 3rem;
+
+  @include breakpoint(small-tablet) {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    grid-gap: 3rem;
+  }
+
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.tasty__text {
+  max-width: 49rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
+  padding-top: 6rem;
+
+  @include breakpoint(small-tablet) {
+    max-width: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 160%;
+    grid-column: 1 / 5;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 160%;
+    text-align: center;
+  }
+}
+
+.tasty__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 2.5rem;
+
+  @include breakpoint(small-tablet) {
+    grid-gap: 3rem;
+    grid-column: 5 / -1;
+    grid-row-gap: 2rem;
+  }
+
+  @include breakpoint(mobile) {
+    grid-gap: 1.2rem;
+    grid-row-gap: 3rem;
+  }
+}
+
+.tasty__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tasty__card-icon {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.tasty__card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 160%;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+  }
+}
+
+.tasty__card-text {
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 400;
+  @include breakpoint(mobile) {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,70 @@
+.breadcrumbs {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+
+  white-space: nowrap;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include breakpoint(mobile) {
+    gap: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 140%;
+  }
+  a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: text-decoration-color 0.2s;
+
+    &:not(.active) {
+      @media (hover: hover) {
+        &:hover {
+          text-decoration-color: transparent;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: currentColor;
+      flex-shrink: 0;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      margin: 0 1.6rem;
+
+      @include breakpoint(mobile) {
+        margin: 0 1rem;
+      }
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    &:link,
+    &:visited {
+      color: var(--primary-color);
+    }
+
+    &.active {
+      text-decoration: none;
+      color: #6f6f6f;
+      pointer-events: none;
+      &:link,
+      &:visited {
+        color: #6f6f6f;
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.how-we-work {
+  @include blockWrapper;
+  padding-top: 6.6rem;
+  padding-bottom: 6.6rem;
+
+  background-color: #e9f5f0;
+  margin-bottom: 6.6rem;
+
+  @include breakpoint(small-tablet) {
+    padding-top: 4.6rem;
+    padding-bottom: 3.6rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-top: 4rem;
+    padding-bottom: 3.4rem;
+    margin-bottom: 3.6rem;
+  }
+}
+
+.how-we-work__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.how-we-work__list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 3rem;
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-top: 0;
+  }
+}
+
+.how-we-work__list-item {
+  &::before {
+    display: none;
+  }
+}
+
+.how-we-work__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.how-we-work__card-number {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  text-align: center;
+  grid-template-areas: "stack";
+  margin-bottom: -2rem;
+  &::before {
+    content: counter(ordered-list);
+    grid-area: stack;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18rem;
+    line-height: 120%;
+    color: white;
+  }
+}
+
+.how-we-work__card-icon {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+  grid-area: stack;
+  z-index: 4;
+  margin-top: 2rem;
+}
+
+.how-we-work__card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.how-we-work__card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+  margin-top: 1rem;
+  max-width: 26rem;
+  align-self: center;
+}
+
+.how-we-work__link {
+  align-self: center;
+  margin-top: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 120%;
+  padding: 1.7rem 5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 3rem;
+  text-align: center;
+  display: block;
+  user-select: none;
+  transition: background-color 0.2s, color 0.2s;
+
+  @include breakpoint(small-tablet) {
+    margin-top: 3.7rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+  }
+}
