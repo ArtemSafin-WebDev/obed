@@ -116,6 +116,14 @@
     padding-bottom: 120%;
     grid-area: stack;
   }
+
+  @media (hover: hover) {
+    &:hover {
+      .corporate__card-card-content-inner {
+        background-color: rgba(#007c0c, 0.9);
+      }
+    }
+  }
 }
 
 .corporate__card-bg {
@@ -145,6 +153,7 @@
   border-radius: 0.8rem;
   color: white;
   background: rgba(#8cc842, 0.9);
+  transition: background-color 0.2s;
 }
 
 .corporate__card-title {

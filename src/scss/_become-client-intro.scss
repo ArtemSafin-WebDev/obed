@@ -1,0 +1,130 @@
+.become-client-intro {
+  @include blockWrapper;
+  position: relative;
+  isolation: isolate;
+  color: white;
+  background-color: #62a312;
+  margin-bottom: 6.6rem;
+  padding: 7.7rem 0;
+
+  @include breakpoint(small-tablet) {
+    margin-bottom: 5.3rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-top: 4.7rem;
+    padding-bottom: 41.5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.become-client-intro__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.become-client-intro__bg-image {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+
+  @include breakpoint(mobile) {
+    object-position: center bottom;
+  }
+}
+
+.become-client-intro__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.become-client-intro__text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.become-client-intro__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 120%;
+  margin-bottom: 2.8rem;
+
+  @include breakpoint(small-tablet) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 120%;
+    margin-bottom: 2.4rem;
+  }
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 120%;
+  }
+}
+
+.become-client-intro__text {
+  max-width: 54rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 120%;
+  margin-bottom: 5rem;
+
+  @include breakpoint(small-tablet) {
+    max-width: 35rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 120%;
+    margin-bottom: 2.7rem;
+  }
+
+  @include breakpoint(mobile) {
+    max-width: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 120%;
+    margin-bottom: 3rem;
+  }
+}
+
+.become-client-intro__link {
+  padding: 1.8rem 5rem;
+  border: 2px solid #ffffff;
+  border-radius: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 120%;
+  transition: color 0.2s, background-color 0.2s;
+  color: white;
+  align-self: flex-start;
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: white;
+      color: #62a312;
+    }
+  }
+  @include breakpoint(mobile) {
+    align-self: stretch;
+  }
+}

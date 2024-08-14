@@ -1,0 +1,474 @@
+<section class="checkout">
+    <div class="checkout__content">
+        <div class="page-top">
+            <div class="breadcrumbs">
+                <a href="#">
+                    Главная</a>
+                <a href="#" class="active">
+                    Форма заказа</a>
+            </div>
+            {{> sharing }}
+        </div>
+
+        <div class="checkout__inner">
+            <div class="checkout__heading-wrapper">
+                <h1 class="checkout__heading">
+                    ФОРМА ЗАКАЗА
+                </h1>
+                <div class="checkout__date">
+                    Дата заказа 09.07.2024 г.
+                </div>
+            </div>
+            <form action="/" class="checkout__form" method="POST" data-need-validation="">
+                <div class="checkout__components">
+                    <div class="checkout__delivery-date">
+                        Дата доставки: среда 10.07.2024
+                    </div>
+                    <div class="checkout__components-card">
+                        <h3 class="checkout__components-card-heading">
+                            Блюда основного меню:
+                        </h3>
+                        <div class="checkout__components-card-list-wrapper">
+                            <div class="checkout__components-card-header">
+                                <div class="checkout__components-card-header-item">
+                                    Блюда
+                                </div>
+                                <div class="checkout__components-card-header-item">
+                                    Количество
+                                </div>
+                                <div class="checkout__components-card-header-item">
+                                    Сумма
+                                </div>
+                            </div>
+                            <ul class="checkout__components-card-list">
+                                <li class="checkout__components-card-list-item">
+                                    <div class="checkout__components-card-row">
+                                        <div class="checkout__components-card-title-wrapper">
+                                            <div class="checkout__components-card-image-container">
+                                                <img src="/images/checkout/1.webp" alt=""
+                                                    class="checkout__components-card-image">
+                                            </div>
+                                            <div class="checkout__components-card-info">
+                                                <h4 class="checkout__components-card-title">
+                                                    Нарезка из помидор с укропом Постн.(помидоры, укроп) 70 гр.
+                                                </h4>
+                                                <div class="checkout__components-card-portion">
+                                                    Ккал 22.13, Вес 70 гр
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout__components-card-quantity">
+                                            <div class="counter" data-min="1">
+                                                <button class="counter__btn counter__btn--minus" type="button">
+                                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__amount">
+                                                    <input type="number" class="counter__amount-input" readonly=""
+                                                        value="1">
+                                                </div>
+                                                <button class="counter__btn counter__btn--plus" type="button">
+                                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="checkout__components-card-total-wrapper">
+                                            <div class="checkout__components-card-total">
+                                                82 руб.
+                                            </div>
+                                            <button class="checkout__components-card-clear" type="button">
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#clear"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="checkout__components-card-list-item">
+                                    <div class="checkout__components-card-row">
+                                        <div class="checkout__components-card-title-wrapper">
+                                            <div class="checkout__components-card-image-container">
+                                                <img src="/images/checkout/2.webp" alt=""
+                                                    class="checkout__components-card-image">
+                                            </div>
+                                            <div class="checkout__components-card-info">
+                                                <h4 class="checkout__components-card-title">
+                                                    Бутерброд с сыром (сыр, хлеб пшеничный) 20/30г
+                                                </h4>
+                                                <div class="checkout__components-card-portion">
+                                                    Ккал 325.6, Вес 50 гр
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout__components-card-quantity">
+                                            <div class="counter">
+                                                <button class="counter__btn counter__btn--minus" type="button">
+                                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__amount">
+                                                    <input type="number" class="counter__amount-input" readonly=""
+                                                        value="1">
+                                                </div>
+                                                <button class="counter__btn counter__btn--plus" type="button">
+                                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div class="checkout__components-card-total-wrapper">
+                                            <div class="checkout__components-card-total">
+                                                45 руб.
+                                            </div>
+                                            <button class="checkout__components-card-clear" type="button">
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#clear"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="checkout__components-card-list-item">
+                                    <div class="checkout__components-card-row">
+                                        <div class="checkout__components-card-title-wrapper">
+                                            <div class="checkout__components-card-image-container">
+                                                <img src="/images/checkout/3.webp" alt=""
+                                                    class="checkout__components-card-image">
+                                            </div>
+                                            <div class="checkout__components-card-info">
+                                                <h4 class="checkout__components-card-title">
+                                                    Морковь по-корейски Постн.(морковь, чеснок, перец, уксус, соль,
+                                                    сахар,
+                                                    кунжут) 100 г.
+                                                </h4>
+                                                <div class="checkout__components-card-portion">
+                                                    Ккал 83, Вес 100 гр
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout__components-card-quantity">
+                                            <div class="counter">
+                                                <button class="counter__btn counter__btn--minus" type="button">
+                                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__amount">
+                                                    <input type="number" class="counter__amount-input" readonly=""
+                                                        value="1">
+                                                </div>
+                                                <button class="counter__btn counter__btn--plus" type="button">
+                                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div class="checkout__components-card-total-wrapper">
+                                            <div class="checkout__components-card-total">
+                                                98 руб.
+                                            </div>
+                                            <button class="checkout__components-card-clear" type="button">
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#clear"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="checkout__components-card-footer">
+                                <div class="checkout__components-card-summary">
+                                    <div class="checkout__components-card-summary-price">
+                                        Общая стоимость: 225 руб.
+                                    </div>
+                                    <div class="checkout__components-card-delivery-price">
+                                        Cтоимость доставки: 0 руб.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__components-card-controls">
+                                <div class="checkout__components-card-controls-title">
+                                    Желаемое время доставки
+                                </div>
+                                <div class="checkout__components-card-controls-selects">
+                                    <div class="checkout__components-card-controls-select js-select">
+                                        <button class="checkout__components-card-controls-select-btn" type="button">
+                                            <span
+                                                class="checkout__components-card-controls-select-btn-text js-select-text">
+
+                                            </span>
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                <use xlink:href="#select-arrow"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="checkout__components-card-controls-select-dropdown">
+                                            <div class="checkout__components-card-controls-select-dropdown-inner">
+                                                <div class="checkout__components-card-controls-select-dropdown-items">
+
+
+                                                    <label class="checkout__components-card-controls-select-radio">
+                                                        <input type="radio" name="time" value="10 часов"
+                                                            class="checkout__components-card-controls-select-radio-input"
+                                                            checked="">
+                                                        <span
+                                                            class="checkout__components-card-controls-select-radio-text">
+                                                            10 часов
+                                                        </span>
+                                                    </label>
+                                                    <label class="checkout__components-card-controls-select-radio">
+                                                        <input type="radio" name="time" value="11 часов"
+                                                            class="checkout__components-card-controls-select-radio-input">
+                                                        <span
+                                                            class="checkout__components-card-controls-select-radio-text">
+                                                            11 часов
+                                                        </span>
+                                                    </label>
+                                                    <label class="checkout__components-card-controls-select-radio">
+                                                        <input type="radio" name="time" value="12 часов"
+                                                            class="checkout__components-card-controls-select-radio-input">
+                                                        <span
+                                                            class="checkout__components-card-controls-select-radio-text">
+                                                            12 часов
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="checkout__components-card-controls-select js-select">
+                                        <button class="checkout__components-card-controls-select-btn" type="button">
+                                            <span
+                                                class="checkout__components-card-controls-select-btn-text js-select-text">
+
+                                            </span>
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                <use xlink:href="#select-arrow"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="checkout__components-card-controls-select-dropdown">
+                                            <div class="checkout__components-card-controls-select-dropdown-inner">
+                                                <div class="checkout__components-card-controls-select-dropdown-items">
+
+
+                                                    <label class="checkout__components-card-controls-select-radio">
+                                                        <input type="radio" name="minutes" value="00 минут"
+                                                            class="checkout__components-card-controls-select-radio-input"
+                                                            checked="">
+                                                        <span
+                                                            class="checkout__components-card-controls-select-radio-text">
+                                                            00 минут
+                                                        </span>
+                                                    </label>
+                                                    <label class="checkout__components-card-controls-select-radio">
+                                                        <input type="radio" name="minutes" value="10 минут"
+                                                            class="checkout__components-card-controls-select-radio-input">
+                                                        <span
+                                                            class="checkout__components-card-controls-select-radio-text">
+                                                            10 минут
+                                                        </span>
+                                                    </label>
+                                                    <label class="checkout__components-card-controls-select-radio">
+                                                        <input type="radio" name="minutes" value="20 минут"
+                                                            class="checkout__components-card-controls-select-radio-input">
+                                                        <span
+                                                            class="checkout__components-card-controls-select-radio-text">
+                                                            20 минут
+                                                        </span>
+                                                    </label>
+                                                    <label class="checkout__components-card-controls-select-radio">
+                                                        <input type="radio" name="minutes" value="30 минут"
+                                                            class="checkout__components-card-controls-select-radio-input">
+                                                        <span
+                                                            class="checkout__components-card-controls-select-radio-text">
+                                                            30 минут
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__result">
+                    <h2 class="checkout__result-heading">
+                        Итого:
+                    </h2>
+                    <ul class="checkout__result-list">
+                        <li class="checkout__result-list-item">
+                            <div class="checkout__result-card">
+                                <img src="/images/checkout-result/1.svg" alt="" class="checkout__result-card-icon">
+                                <h3 class="checkout__result-card-title">
+                                    Количество
+                                    позиций заказа
+                                </h3>
+                                <div class="checkout__result-card-amount">
+                                    4
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkout__result-list-item">
+                            <div class="checkout__result-card">
+                                <img src="/images/checkout-result/2.svg" alt="" class="checkout__result-card-icon">
+                                <h3 class="checkout__result-card-title">
+                                    Калорийность
+                                    заказа
+                                </h3>
+                                <div class="checkout__result-card-amount">
+                                    623
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkout__result-list-item">
+                            <div class="checkout__result-card">
+                                <img src="/images/checkout-result/3.svg" alt="" class="checkout__result-card-icon">
+                                <h3 class="checkout__result-card-title">
+                                    Итоговая
+                                    сумма
+                                </h3>
+                                <div class="checkout__result-card-amount">
+                                    225 руб.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="checkout__send">
+                    <h2 class="checkout__send-title">
+                        Отправить заказ
+                    </h2>
+                    <div class="checkout__send-text">
+                        Для оформления заказа необходима авторизация.
+                        Если Вы еще не зарегистрировались, нажмите кнопку "регистрация ".
+                        Регистрация займет у вас не более пары минут.
+                    </div>
+                    <div class="checkout__send-row">
+                        <div class="checkout__send-fields">
+                            <div class="checkout__send-field">
+                                <input type="email" name="your-email" class="checkout__send-input" placeholder="E-mail*"
+                                    required="">
+                            </div>
+                            <div class="checkout__send-field">
+                                <input type="password" name="your-password" class="checkout__send-input"
+                                    placeholder="Пароль*" required="">
+                            </div>
+                        </div>
+                        <button class="checkout__send-login" type="submit">
+                            Войти
+                        </button>
+                        <a href="#" class="checkout__send-register">
+                            Регистрация
+                        </a>
+                    </div>
+                </div>
+                <div class="checkout__payment">
+                    <h2 class="checkout__payment-title">
+                        Выберите способ оплаты
+                    </h2>
+                    <ul class="checkout__payment-list">
+                        <li class="checkout__payment-list-item">
+                            <label class="checkout__payment-card">
+                                <input type="radio" name="payment" value="1" class="checkout__payment-card-input"
+                                    checked="">
+                                <div class="checkout__payment-card-marker">
+
+                                </div>
+                                <div class="checkout__payment-card-content">
+                                    <img src="/images/checkout-payment/1.svg" alt=""
+                                        class="checkout__payment-card-icon">
+                                    <div class="checkout__payment-card-text-content">
+                                        <h3 class="checkout__payment-card-title">
+                                            Наличные
+                                        </h3>
+                                        <div class="checkout__payment-card-text">
+                                            Оплата наличными при получении заказа курьеру.
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="checkout__payment-list-item">
+                            <label class="checkout__payment-card">
+                                <input type="radio" name="payment" value="2" class="checkout__payment-card-input">
+                                <div class="checkout__payment-card-marker">
+
+                                </div>
+                                <div class="checkout__payment-card-content">
+                                    <img src="/images/checkout-payment/2.webp" alt=""
+                                        class="checkout__payment-card-icon">
+                                    <div class="checkout__payment-card-text-content">
+                                        <h3 class="checkout__payment-card-title">
+                                            Интернет-эквайринг Сбербанк
+                                        </h3>
+                                        <div class="checkout__payment-card-text">
+                                            Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт
+                                            платежной
+                                            системы МИР
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="checkout__payment-list-item">
+                            <label class="checkout__payment-card">
+                                <input type="radio" name="payment" value="2" class="checkout__payment-card-input">
+                                <div class="checkout__payment-card-marker">
+
+                                </div>
+                                <div class="checkout__payment-card-content">
+                                    <img src="/images/checkout-payment/3.svg" alt=""
+                                        class="checkout__payment-card-icon">
+                                    <div class="checkout__payment-card-text-content">
+                                        <h3 class="checkout__payment-card-title">
+                                            По счету
+                                        </h3>
+                                        <div class="checkout__payment-card-text">
+                                            Безналичный расчет для юридических лиц
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="checkout__courier">
+                    <h2 class="checkout__courier-title">
+                        Доставка курьером
+                    </h2>
+                    <ul class="checkout__courier-list">
+                        <li class="checkout__courier-list-item">
+                            Доставка осуществляется только по Москве и МО.
+                        </li>
+                        <li class="checkout__courier-list-item">
+                            Бесплатная доставка от 900 руб. в день
+                        </li>
+                        <li class="checkout__courier-list-item">
+                            Стоимость доставки по Москве 200 руб.
+                        </li>
+                        <li class="checkout__courier-list-item">
+                            Минимальный заказ 300 руб.
+                        </li>
+                        <li class="checkout__courier-list-item">
+                            Стоимость доставки по МО определяется
+                        </li>
+                    </ul>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</section>

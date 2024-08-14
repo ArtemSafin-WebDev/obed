@@ -11,15 +11,15 @@
         <h2 class="become-client__heading">
             Стать клиентом в один клик
         </h2>
-        <form action="/" method="POST" class="become-client__form">
+        <form action="/" method="POST" class="become-client__form" data-need-validation="">
             <div class="become-client__form-fields">
                 <div class="become-client__form-field">
                     <input type="text" name="your-name" class="become-client__form-input" placeholder="Имя*"
                         required="">
                 </div>
                 <div class="become-client__form-field">
-                    <input type="tel" name="your-name" class="become-client__form-input" placeholder="Телефон*"
-                        required="">
+                    <input type="tel" name="your-name" class="become-client__form-input js-phone-input"
+                        placeholder="Телефон*" required="" data-parsley-phone="">
                 </div>
             </div>
             <div class="become-client__form-policy">

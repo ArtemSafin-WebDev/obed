@@ -1,0 +1,203 @@
+<section class="user-account">
+    <div class="user-account__content">
+        <div class="page-top">
+            <div class="breadcrumbs">
+                <a href="#">
+                    Главная</a>
+                <a href="#" class="active">
+                    Информация о компании</a>
+            </div>
+            {{> sharing }}
+        </div>
+
+        <div class="user-account__inner">
+            <h1 class="user-account__heading">
+                Информация о компании
+            </h1>
+            <div class="user-account__row">
+                <div class="user-account__left-col">
+                    <div class="user-account__nav">
+                        <ul class="user-account__nav-list">
+                            <li class="user-account__nav-list-item">
+                                <a href="#" class="user-account__nav-link">
+                                    Личные данные
+                                </a>
+                            </li>
+                            <li class="user-account__nav-list-item">
+                                <a href="#" class="user-account__nav-link active">
+                                    Информация о компании
+                                </a>
+                            </li>
+                            <li class="user-account__nav-list-item">
+                                <a href="#" class="user-account__nav-link">
+                                    Мои заказы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-account__right-col">
+                    <div class="user-account__company-row">
+                        <div class="user-account__company-col">
+                            <h2 class="user-account__company-heading">
+                                Адрес доставки
+                            </h2>
+                            <form action="/" method="POST" class="user-account__company-form" data-need-validation="">
+                                <div class="user-account__company-fields">
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Город
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+                                                <input type="text" class="user-account__personal-data-input" required=""
+                                                    placeholder="Москва">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Улица
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+                                                <input type="text" class="user-account__personal-data-input" required=""
+                                                    placeholder="ул. Вкусных обедов">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Дом, строение
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+                                                <input type="text" class="user-account__personal-data-input" required=""
+                                                    placeholder="2С5">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Кв., офис
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+                                                <input type="text" class="user-account__personal-data-input" required=""
+                                                    placeholder="123">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Подъезд
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+                                                <input type="text" class="user-account__personal-data-input"
+                                                    placeholder="2">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Домофон, код
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+                                                <input type="text" class="user-account__personal-data-input"
+                                                    placeholder="Домофон, код">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Комментарий
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+
+                                                <textarea class="user-account__personal-data-input"
+                                                    placeholder="Комментарий"></textarea>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="user-account__company-submit-btn" type="submit">
+                                    Изменить адрес
+                                </button>
+
+                            </form>
+                        </div>
+                        <div class="user-account__company-col">
+                            <h2 class="user-account__company-heading">
+                                Информация о компании
+                            </h2>
+                            <form action="/" method="POST" class="user-account__company-form" data-need-validation="">
+                                <div class="user-account__company-fields">
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Название
+                                                компании*
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+                                                <input type="text" class="user-account__personal-data-input" required=""
+                                                    placeholder="Москва">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Администратор компании
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+                                                <input type="text" class="user-account__personal-data-input"
+                                                    placeholder="ул. Вкусных обедов">
+                                                <span class="user-account__company-field-remark">
+                                                    После смены администратора, некоторые функции Вам будут недоступны
+                                                </span>
+                                            </span>
+                                        </label>
+
+                                    </div>
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Желаемое время доставки
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+                                                <input type="text" class="user-account__personal-data-input" required=""
+                                                    placeholder="16:00">
+                                            </span>
+                                        </label>
+                                    </div>
+
+
+                                    <div class="user-account__company-field">
+                                        <label class="user-account__personal-data-label">
+                                            <span class="user-account__personal-data-label-text">
+                                                Комментарий
+                                            </span>
+                                            <span class="user-account__personal-data-input-wrapper">
+
+                                                <textarea class="user-account__personal-data-input"
+                                                    placeholder="Комментарий"></textarea>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="user-account__company-submit-btn" type="submit">
+                                    Сохранить
+                                </button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

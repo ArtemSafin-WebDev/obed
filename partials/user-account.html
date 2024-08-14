@@ -1,0 +1,145 @@
+<section class="user-account">
+    <div class="user-account__content">
+        <div class="page-top">
+            <div class="breadcrumbs">
+                <a href="#">
+                    Главная</a>
+                <a href="#" class="active">
+                    Личный кабинет</a>
+            </div>
+            {{> sharing }}
+        </div>
+
+        <div class="user-account__inner">
+            <h1 class="user-account__heading">
+                Личный кабинет
+            </h1>
+            <div class="user-account__row">
+                <div class="user-account__left-col">
+                    <div class="user-account__nav">
+                        <ul class="user-account__nav-list">
+                            <li class="user-account__nav-list-item">
+                                <a href="#" class="user-account__nav-link active">
+                                    Личные данные
+                                </a>
+                            </li>
+                            <li class="user-account__nav-list-item">
+                                <a href="#" class="user-account__nav-link">
+                                    Информация о компании
+                                </a>
+                            </li>
+                            <li class="user-account__nav-list-item">
+                                <a href="#" class="user-account__nav-link">
+                                    Мои заказы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-account__right-col">
+                    <div class="user-account__wrapper">
+                        <h3 class="user-account__user-data-heading">
+                            Личные данные
+                        </h3>
+                        <form action="/" method="POST" class="user-account__personal-data-form" data-need-validation="">
+                            <div class="user-account__personal-data-fields">
+                                <div class="user-account__personal-data-field">
+                                    <label class="user-account__personal-data-label">
+                                        <span class="user-account__personal-data-label-text">
+                                            Имя
+                                        </span>
+                                        <span class="user-account__personal-data-input-wrapper">
+                                            <input type="text" class="user-account__personal-data-input" required=""
+                                                placeholder="Константин">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="user-account__personal-data-field">
+                                    <label class="user-account__personal-data-label">
+                                        <span class="user-account__personal-data-label-text">
+                                            Моб. телефон
+                                        </span>
+                                        <span class="user-account__personal-data-input-wrapper">
+                                            <input type="tel" class="user-account__personal-data-input js-phone-input"
+                                                required="" placeholder="+7" data-parsley-phone="">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="user-account__personal-data-field">
+                                    <label class="user-account__personal-data-label">
+                                        <span class="user-account__personal-data-label-text">
+                                            Фамилия
+                                        </span>
+                                        <span class="user-account__personal-data-input-wrapper">
+                                            <input type="text" class="user-account__personal-data-input" required=""
+                                                placeholder="Константинопольский">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="user-account__personal-data-field">
+                                    <label class="user-account__personal-data-label">
+                                        <span class="user-account__personal-data-label-text">
+                                            Стационарный
+                                        </span>
+                                        <span class="user-account__personal-data-input-wrapper">
+                                            <input type="tel" class="user-account__personal-data-input js-phone-input"
+                                                required="" placeholder="+7" data-parsley-phone="">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="user-account__personal-data-field">
+                                    <label class="user-account__personal-data-label">
+                                        <span class="user-account__personal-data-label-text">
+                                            Компания
+                                        </span>
+                                        <span class="user-account__personal-data-input-wrapper">
+                                            <input type="text" class="user-account__personal-data-input" required=""
+                                                placeholder="ООО Компания">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="user-account__personal-data-field">
+                                    <label class="user-account__personal-data-label">
+                                        <span class="user-account__personal-data-label-text">
+                                            Дата рождения
+                                        </span>
+                                        <span class="user-account__personal-data-input-wrapper">
+                                            <input type="text" class="user-account__personal-data-input" required=""
+                                                placeholder="01.01.1999">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="user-account__personal-data-field">
+                                    <label class="user-account__personal-data-label">
+                                        <span class="user-account__personal-data-label-text">
+                                            E-mail
+                                        </span>
+                                        <span class="user-account__personal-data-input-wrapper">
+                                            <input type="email" class="user-account__personal-data-input" required=""
+                                                placeholder="info@infoinfo.ru">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="user-account__personal-data-field">
+                                    <label class="user-account__personal-data-label">
+                                        <span class="user-account__personal-data-label-text">
+                                            Лимит
+                                        </span>
+                                        <span class="user-account__personal-data-input-wrapper">
+                                            <input type="text" class="user-account__personal-data-input" required=""
+                                                placeholder="Лимит">
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="user-account__personal-data-save-btn" type="submit">
+                                Сохранить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
