@@ -1145,6 +1145,11 @@
   text-align: center;
   width: 100%;
 
+  &:link,
+  &:visited {
+    color: #6f6f6f;
+  }
+
   &.active {
     color: #f00311;
   }
@@ -1191,6 +1196,7 @@
 
     &::-webkit-scrollbar-track {
       background-color: #f3f6f8;
+      border-radius: 10px;
     }
   }
 }
