@@ -326,3 +326,239 @@ textarea.modal__callback-form-input {
     color: var(--primary-color);
   }
 }
+
+.modal__dish-modal {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+
+  @include breakpoint(mobile) {
+    padding: 1.4rem;
+    padding-top: 4.4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.modal__dish-modal-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 120%;
+  margin-bottom: 1.6rem;
+  text-align: center;
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 120%;
+  }
+}
+
+.modal__dish-modal-image-wrapper {
+  position: relative;
+  aspect-ratio: 414 / 239;
+  margin-bottom: 1.9rem;
+  overflow: hidden;
+  border-radius: 0.8rem;
+
+  @include breakpoint(mobile) {
+    aspect-ratio: 268 / 155;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.modal__dish-modal-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal__dish-modal-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  justify-content: space-between;
+
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.modal__dish-modal-text-content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  flex-grow: 1;
+  @include breakpoint(mobile) {
+    width: auto;
+    flex-grow: 0;
+  }
+}
+
+.modal__dish-modal-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 140%;
+  margin-bottom: 0.4rem;
+
+  @include breakpoint(mobile) {
+  }
+}
+
+.modal__dish-modal-ingredients {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: #151716;
+  margin-bottom: 0.8rem;
+}
+
+.modal__dish-modal-components {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #6f6f6f;
+  line-height: 140%;
+}
+
+.modal__dish-modal-add-to-cart {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  grid-template-areas: "stack";
+  margin-top: 1.2rem;
+
+  @include breakpoint(mobile) {
+    margin-top: 0.8rem;
+  }
+}
+
+.modal__dish-modal-add-to-cart-btn {
+  align-self: center;
+  justify-self: flex-start;
+  padding: 1rem 3rem;
+  background: #ffffff;
+  border: 1px solid #00630a;
+  border-radius: 3rem;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s, opacity 0.2s,
+    visibility 0.2s;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #151716;
+  line-height: 120%;
+  white-space: nowrap;
+  user-select: none;
+  grid-area: stack;
+  @include breakpoint(mobile) {
+    // padding: 0.7rem 1.8rem;
+    // border: 1px solid #007c0c;
+    // border-radius: 3rem;
+    // align-self: center;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #00630a;
+      color: white;
+    }
+  }
+
+  .modal__dish-modal-add-to-cart.active & {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0s linear 0.2s;
+  }
+}
+
+.modal__dish-modal-add-to-cart-counter-wrapper {
+  grid-area: stack;
+  align-self: center;
+  justify-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0s linear 0.2s;
+
+  @include breakpoint(mobile) {
+    // align-self: center;
+
+    // .counter {
+    //   width: 6.5rem;
+
+    //   padding: 0.2rem 0.7rem;
+    // }
+  }
+
+  .modal__dish-modal-add-to-cart.active & {
+    opacity: 1;
+    visibility: inherit;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+}
+
+.modal__dish-modal-add-to-cart-counter-submit {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 3.8rem;
+  border-radius: 3rem;
+  background-color: var(--primary-color);
+  display: grid;
+  place-items: center;
+  transition: background-color 0.2s;
+  svg {
+    width: 1.74rem;
+    height: 1.2rem;
+    fill: white;
+  }
+
+  // @include breakpoint(mobile) {
+  //   width: 3.5rem;
+  //   height: 3rem;
+
+  //   svg {
+  //     width: 1.6rem;
+  //     height: 1rem;
+  //   }
+  // }
+}
+
+.modal__dish-modal-tags {
+  flex-shrink: 0;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.modal__dish-modal-tags-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal__dish-modal-tags-list-item {
+  flex-shrink: 0;
+}
+
+.modal__dish-modal-tag {
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: #00630a;
+  }
+}
