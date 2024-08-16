@@ -1,0 +1,938 @@
+<section class="stats">
+    <div class="stats__content">
+        <div class="page-top">
+            <div class="breadcrumbs">
+                <a href="#">
+                    Главная</a>
+                <a href="#" class="active">
+                    Рейтинг популярных блюд</a>
+            </div>
+            {{> sharing }}
+        </div>
+
+        <div class="stats__inner">
+            <h1 class="stats__heading">
+                Рейтинг<br> популярных блюд
+            </h1>
+            <ul class="stats__list">
+                <li class="stats__list-item">
+                    <div class="stats__block">
+                        <div class="stats__block-top-row">
+                            <h2 class="stats__block-title">
+                                Салаты и закуски
+                            </h2>
+                            <div class="stats__block-btns">
+                                <a href="#" class="stats__block-btn active">
+                                    Год
+                                </a>
+                                <a href="#" class="stats__block-btn">
+                                    Месяц
+                                </a>
+                                <a href="#" class="stats__block-btn">
+                                    Неделя
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="stats__block-content">
+                            <div class="stats__block-tabs">
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="stats__list-item">
+                    <div class="stats__block">
+                        <div class="stats__block-top-row">
+                            <h2 class="stats__block-title">
+                                Первое блюдо
+                            </h2>
+                            <div class="stats__block-btns">
+                                <a href="#" class="stats__block-btn active">
+                                    Год
+                                </a>
+                                <a href="#" class="stats__block-btn">
+                                    Месяц
+                                </a>
+                                <a href="#" class="stats__block-btn">
+                                    Неделя
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="stats__block-content">
+                            <div class="stats__block-tabs">
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="stats__list-item">
+                    <div class="stats__block">
+                        <div class="stats__block-top-row">
+                            <h2 class="stats__block-title">
+                                Второе блюдо
+                            </h2>
+                            <div class="stats__block-btns">
+                                <a href="#" class="stats__block-btn active">
+                                    Год
+                                </a>
+                                <a href="#" class="stats__block-btn">
+                                    Месяц
+                                </a>
+                                <a href="#" class="stats__block-btn">
+                                    Неделя
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="stats__block-content">
+                            <div class="stats__block-tabs">
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="stats__list-item">
+                    <div class="stats__block">
+                        <div class="stats__block-top-row">
+                            <h2 class="stats__block-title">
+                                Выпечка/десерт
+                            </h2>
+                            <div class="stats__block-btns">
+                                <a href="#" class="stats__block-btn active">
+                                    Год
+                                </a>
+                                <a href="#" class="stats__block-btn">
+                                    Месяц
+                                </a>
+                                <a href="#" class="stats__block-btn">
+                                    Неделя
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="stats__block-content">
+                            <div class="stats__block-tabs">
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="stats__block-tabs-item">
+                                    <div class="stats__block-chart">
+                                        <canvas></canvas>
+                                    </div>
+                                    <ul class="stats__block-list">
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B1D9DE" data-amount="120"
+                                                style="--marker-color: #B1D9DE" data-label="Салат Летний">
+                                                Салат Летний с отдельной салатной заправкой Постн 120 гр стол 5
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#D1AAD0" data-amount="150"
+                                                style="--marker-color: #D1AAD0" data-label="Сельдь под шубой">
+                                                Сельдь под шубой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#93B3C8" data-amount="40"
+                                                style="--marker-color: #93B3C8" data-label="Яйцо отварное">
+                                                Яйцо отварное 40 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#E894A9" data-amount="120"
+                                                style="--marker-color: #E894A9" data-label="Салат Деревенский">
+                                                Салат Деревенский с отдельной салатной заправкой Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#B8D792" data-amount="150"
+                                                style="--marker-color: #B8D792" data-label="Салат Цезарь">
+                                                Салат Цезарь премиум 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F3DF8C" data-amount="110"
+                                                style="--marker-color: #F3DF8C" data-label="Винегрет">
+                                                Винегрет Постн 110 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#F49C9F" data-amount="150"
+                                                style="--marker-color: #F49C9F" data-label="СЭНДВИЧ">
+                                                СЭНДВИЧ с копчёной куриной грудкой 150 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#95CB9B" data-amount="120"
+                                                style="--marker-color: #95CB9B" data-label="Винегрет с яблоками">
+                                                Винегрет с яблоками Постн 120 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#C8B2E3" data-amount="180"
+                                                style="--marker-color: #C8B2E3" data-label="Ланч бургер">
+                                                Ланч бургер с курицей 180 гр
+                                            </div>
+                                        </li>
+                                        <li class="stats__block-list-item">
+                                            <div class="stats__block-item" data-color="#FBB18D" data-amount="150"
+                                                style="--marker-color: #FBB18D"
+                                                data-label="Салат микс с вялеными томатами">
+                                                Салат микс с вялеными томатами 150 гр
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
