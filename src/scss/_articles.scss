@@ -107,6 +107,11 @@
   background-color: #fff;
   gap: 1rem;
   margin-bottom: 3rem;
+  transition: border-color 0.2s;
+
+  &:focus-within {
+    border-color: var(--light-green);
+  }
 
   @include breakpoint(small-tablet) {
     padding: 1rem 0.9rem;
@@ -125,6 +130,7 @@
   font-size: 1.4rem;
   line-height: 100%;
   color: #151716;
+  height: 1.8rem;
 
   @include breakpoint(small-tablet) {
     font-style: normal;
@@ -199,7 +205,10 @@
   line-height: 120%;
   text-decoration: underline;
   text-decoration-style: dashed;
-  transition: text-decoration-color 0.2s;
+  transition: color 0.2s;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: none;
 
   @include breakpoint(small-tablet) {
     font-style: normal;
@@ -263,6 +272,15 @@
 .articles__read-also-card {
   display: flex;
   flex-direction: column;
+
+  @media (hover: hover) {
+    &:hover {
+      .articles__read-also-card-title {
+        color: var(--primary-color);
+        text-decoration-color: var(--primary-color);
+      }
+    }
+  }
 }
 
 .articles__read-also-card-image-container {
@@ -334,6 +352,11 @@
   font-size: 1.4rem;
   line-height: 140%;
   margin-bottom: 1rem;
+  transition: color 0.2s, text-decoration-color 0.2s;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 1px;
 }
 
 .articles__read-also-card-text {

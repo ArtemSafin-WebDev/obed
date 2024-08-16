@@ -1,0 +1,152 @@
+<section class="food">
+    <div class="food__content">
+        <h2 class="food__heading">
+            Индивидуальные обеды
+        </h2>
+        <div class="food__text">
+            Впишите сумму, которую Вы хотите потратить на обед и выберите из списков нужные блюда. <span
+                class="food__info">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#info"></use>
+                </svg>
+                <div class="food__info-popover">
+                    <div class="food__info-popover-inner">
+                        Комментарий к иконке
+                    </div>
+                </div>
+            </span>
+        </div>
+        <form action="/" method="POST" class="food__form">
+            <div class="food__form-amount">
+                <div class="food__form-amount-input-wrapper">
+                    <input type="number" class="food__form-amount-input"
+                        placeholder="Введите сумму не менее 200 рублей">
+                </div>
+                <div class="food__form-amount-text">
+                    Сумма по выбранным блюдам
+                </div>
+            </div>
+            <ul class="food__form-dishes-list">
+                <li class="food__form-dishes-list-item">
+                    <a href="#" class="menu__business-card">
+                        <div class="menu__business-card-image-container">
+                            <img src="/images/menu-business/1.webp" alt="" class="menu__business-card-image">
+                        </div>
+                        <div class="menu__business-card-content">
+                            <h3 class="menu__business-card-title">
+                                Салат "Лайт" диетич. Постн. 100 гр.
+                            </h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="food__form-dishes-list-item">
+                    <a href="#" class="menu__business-card">
+                        <div class="menu__business-card-image-container">
+                            <img src="/images/menu-business/2.webp" alt="" class="menu__business-card-image">
+                        </div>
+                        <div class="menu__business-card-content">
+                            <h3 class="menu__business-card-title">
+                                Суп-пюре из шампиньонов со сливками 350 мл.
+                            </h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="food__form-dishes-list-item">
+                    <a href="#" class="menu__business-card">
+                        <div class="menu__business-card-image-container">
+                            <img src="/images/menu-business/3.webp" alt="" class="menu__business-card-image">
+                        </div>
+                        <div class="menu__business-card-content">
+                            <h3 class="menu__business-card-title">
+                                Сливочный суп с сёмгой 350 мл.
+                            </h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="food__form-dishes-list-item">
+                    <a href="#" class="menu__business-card">
+                        <div class="menu__business-card-image-container">
+                            <img src="/images/menu-business/4.webp" alt="" class="menu__business-card-image">
+                        </div>
+                        <div class="menu__business-card-content">
+                            <h3 class="menu__business-card-title">
+                                Окрошка овощная на кефире 350 мл.
+                            </h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="food__form-dishes-list-item">
+                    <a href="#" class="menu__business-card">
+                        <div class="menu__business-card-image-container">
+                            <img src="/images/menu-business/5.webp" alt="" class="menu__business-card-image">
+                        </div>
+                        <div class="menu__business-card-content">
+                            <h3 class="menu__business-card-title">
+                                Суп-лапша с куриными потрошками 350 гр.
+                            </h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="food__form-dishes-list-item">
+                    <a href="#" class="menu__business-card">
+                        <div class="menu__business-card-image-container">
+                            <img src="/images/menu-business/1.webp" alt="" class="menu__business-card-image">
+                        </div>
+                        <div class="menu__business-card-content">
+                            <h3 class="menu__business-card-title">
+                                Салат "Лайт" диетич. Постн. 100 гр.
+                            </h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="food__form-dishes-list-item">
+                    <a href="#" class="menu__business-card">
+                        <div class="menu__business-card-image-container">
+                            <img src="/images/menu-business/2.webp" alt="" class="menu__business-card-image">
+                        </div>
+                        <div class="menu__business-card-content">
+                            <h3 class="menu__business-card-title">
+                                Суп-пюре из чечевицы по-турецки 350 мл.
+                            </h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="food__form-controls">
+                <div class="food__form-specs-wrapper">
+
+
+                    <div class="food__form-weight">
+                        Вес: 0 гр
+                    </div>
+                    <div class="food__form-calories">
+                        Ккал: 0 ккал
+                    </div>
+                </div>
+                <div class="food__form-quantity">
+                    <div class="food__form-quantity-text">
+                        Количество:
+                    </div>
+                    <div class="counter" data-min="1">
+                        <button class="counter__btn counter__btn--minus" type="button">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#minus"></use>
+                            </svg>
+                        </button>
+                        <div class="counter__amount">
+                            <input type="number" class="counter__amount-input" readonly="" value="1">
+                        </div>
+                        <button class="counter__btn counter__btn--plus" type="button">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="food__form-submit" type="submit">
+                    Добавить
+                </button>
+            </div>
+        </form>
+    </div>
+</section>

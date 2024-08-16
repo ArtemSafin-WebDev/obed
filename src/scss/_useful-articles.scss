@@ -74,6 +74,15 @@
 .useful-articles__card {
   display: flex;
   flex-direction: column;
+
+  @media (hover: hover) {
+    &:hover {
+      .useful-articles__card-title {
+        color: var(--primary-color);
+        text-decoration-color: var(--primary-color);
+      }
+    }
+  }
 }
 
 .useful-articles__card-image-container {
@@ -112,6 +121,11 @@
   font-size: 1.6rem;
   line-height: 140%;
   margin-top: 0.4rem;
+  transition: color 0.2s, text-decoration-color 0.2s;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
 }
 
 .useful-articles__card-text {

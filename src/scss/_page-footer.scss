@@ -34,7 +34,7 @@
 }
 
 .page-footer__scroll-up {
-  position: absolute;
+  position: fixed;
   width: 7rem;
   height: 7rem;
   display: flex;
@@ -49,8 +49,16 @@
   font-size: 1.2rem;
   line-height: 140%;
   color: #6f6f6f;
-  bottom: 9.5rem;
-  right: 9.7rem;
+  bottom: 9rem;
+  right: 4rem;
+  z-index: 40;
+  background-color: #151716;
+  transition: all 0.2s;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
 
   @include breakpoint(small-tablet) {
     display: none;
@@ -64,6 +72,16 @@
     height: 2.2rem;
     fill: var(--light-green);
     flex-shrink: 0;
+    transition: fill 0.2s;
+  }
+  @media (hover: hover) {
+    &:hover {
+      border-color: var(--light-green);
+      color: var(--light-green);
+      svg {
+        fill: white;
+      }
+    }
   }
 }
 
@@ -401,11 +419,16 @@
 }
 
 .page-footer__subscribe-form-wrapper {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr auto;
   gap: 2rem;
+  grid-row-gap: 0;
   padding-bottom: 1.1rem;
   border-bottom: 1px solid rgba(#ffffff, 0.3);
+
+  .parsley-errors-list {
+    grid-column: 1 / -1;
+  }
 
   [data-lastpass-icon-root] {
     display: none !important;
@@ -413,13 +436,14 @@
 }
 
 .page-footer__subscribe-form-input {
-  width: 30%;
-  flex-grow: 1;
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 140%;
   color: white;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 
   &::placeholder {
     color: white;
@@ -434,10 +458,19 @@
   line-height: 100%;
   border-radius: 2rem;
   background-color: var(--light-green);
+  transition: background-color 0.2s, color 0.2s;
   color: white;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
   &:link,
   &:visited {
     color: white;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-color);
+    }
   }
 }
 

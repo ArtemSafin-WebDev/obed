@@ -36,6 +36,59 @@
   width: 100%;
   position: relative;
   color: var(--text-color);
+  &--food {
+    max-width: 110rem;
+  }
+}
+
+.modal__food {
+  display: flex;
+  flex-direction: column;
+
+  padding: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 5.3rem;
+
+  @include breakpoint(small-tablet) {
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  @include breakpoint(mobile) {
+    padding: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 4.4rem;
+  }
+}
+
+.modal__food-heading {
+  padding-bottom: 2.8rem;
+  text-align: center;
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 3.7rem;
+  @include breakpoint(small-tablet) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 120%;
+    margin-bottom: 3rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    height: 0.3rem;
+    background-color: var(--light-green);
+    width: 9rem;
+  }
 }
 
 .modal__close {

@@ -6,6 +6,13 @@
   border-radius: 3rem;
   padding: 0.6rem 1.4rem;
   background-color: #fff;
+  transition: border-color 0.2s;
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: var(--light-green);
+    }
+  }
 }
 
 .counter__btn {
@@ -19,6 +26,14 @@
     height: 100%;
     fill: var(--primary-color);
     transition: fill 0.2s;
+  }
+
+  @media (hover: hover) {
+    &:not([disabled]):hover {
+      svg {
+        fill: var(--light-green);
+      }
+    }
   }
 }
 
@@ -36,4 +51,5 @@
   font-size: 1.8rem;
   line-height: 100%;
   color: #151716;
+  height: 2.5rem;
 }

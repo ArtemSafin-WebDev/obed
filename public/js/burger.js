@@ -1,11 +1,9 @@
-export default function menu() {
-  const burger = document.querySelector<HTMLButtonElement>(
-    ".page-header__burger"
-  );
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".page-header__burger");
   if (!burger) return;
 
   burger.addEventListener("click", (event) => {
     event.preventDefault();
     document.body.classList.toggle("mobile-menu-open");
   });
-}
+});
