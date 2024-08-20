@@ -24,6 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
       ru: "Введите правильно дату",
     },
   });
+  window.Parsley.addValidator("time", {
+    requirementType: "string",
+    validateString: function (value) {
+      if (value.trim() === "") return true;
+      return dayjs(value, "HH:mm", true).isValid();
+    },
+    messages: {
+      en: "Enter correct time",
+      ru: "Введите правильно время",
+    },
+  });
 
   Parsley.addMessages("ru", {
     defaultMessage: "Некорректное значение.",

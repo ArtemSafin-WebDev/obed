@@ -5,4 +5,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const instance = new Inputmask({ mask: "+7 (999) 999-99-99" });
     instance.mask(input);
   });
+
+  const dateInputs = document.querySelectorAll(".js-date-input");
+  Inputmask("99.99.9999").mask(dateInputs);
+  const timeInputs = document.querySelectorAll(".js-time-input");
+  Inputmask("99:99").mask(timeInputs);
+
+  const onlyNumericInputsNoFormatting = Array.from(
+    document.querySelectorAll(".js-numeric-input")
+  );
+
+  onlyNumericInputsNoFormatting.forEach((input) => {
+    input.addEventListener("input", () => {
+      const value = input.value;
+      const newCleanedValue = parseInt(value.replace(/[^\d]+/g, ""), 10);
+      if (isNaN(newCleanedValue)) {
+        input.value = "";
+      } else {
+        input.value = newCleanedValue;
+      }
+    });
+  });
 });

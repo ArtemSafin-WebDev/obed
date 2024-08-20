@@ -52,7 +52,7 @@
   bottom: 9rem;
   right: 4rem;
   z-index: 40;
-  background-color: #151716;
+  background-color: white;
   transition: all 0.2s;
 
   &.hidden {
@@ -79,7 +79,7 @@
       border-color: var(--light-green);
       color: var(--light-green);
       svg {
-        fill: white;
+        fill: var(--primary-color);
       }
     }
   }

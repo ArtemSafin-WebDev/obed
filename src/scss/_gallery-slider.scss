@@ -65,6 +65,7 @@
     transition: background-color 0.2s;
     opacity: 1;
     margin: 0;
+    border-radius: 0;
 
     &.swiper-pagination-bullet-active {
       background-color: var(--primary-color);
@@ -77,10 +78,46 @@
   display: block;
   overflow: hidden;
   position: relative;
+  aspect-ratio: 230 / 140;
+
   &::before {
     content: "";
-    display: block;
-    padding-bottom: 60.8%;
+    position: absolute;
+    inset: 0;
+    transition: opacity 0.2s;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      #007c0c;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    pointer-events: none;
+    transition: opacity 0.2s;
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/lupa.svg");
+    opacity: 0;
+    z-index: 5;
+    right: 0.6rem;
+    bottom: 0.6rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      &::before {
+        opacity: 0.3;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
   }
 }
 

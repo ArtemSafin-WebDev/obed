@@ -20,6 +20,7 @@ export default function gallerySlider() {
       loop: false,
       pagination: {
         el: element.querySelector<HTMLElement>(".gallery-slider__pagination"),
+        clickable: true,
       },
       navigation: {
         prevEl: element.querySelector<HTMLButtonElement>(

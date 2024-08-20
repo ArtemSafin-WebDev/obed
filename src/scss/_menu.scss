@@ -676,7 +676,7 @@
   }
 
   @media (hover: hover) {
-    &:hover {
+    &:has(.menu__products-card-add-to-cart-wrapper.active) {
       border-color: var(--primary-color);
     }
   }
@@ -1820,6 +1820,15 @@
   border-radius: 0.8rem;
   flex-grow: 1;
 
+  &.active {
+    cursor: default;
+    .menu__business-card-choose-btn {
+      border-color: var(--light-green);
+      background-color: var(--light-green);
+      color: white;
+    }
+  }
+
   @media (hover: hover) {
     &:hover {
       .menu__business-card-title {
@@ -2019,5 +2028,16 @@
     &.swiper-pagination-bullet-active {
       background-color: var(--primary-color);
     }
+  }
+}
+
+.menu__bottom-text {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-top: 5rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.2rem;
+    margin-top: 2rem;
   }
 }
