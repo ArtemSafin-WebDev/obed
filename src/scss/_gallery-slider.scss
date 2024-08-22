@@ -21,6 +21,10 @@
   justify-content: space-between;
   gap: 3rem;
   margin-top: 2rem;
+
+  @include breakpoint(mobile) {
+    gap: 1.5rem;
+  }
 }
 
 .gallery-slider__arrow {
@@ -47,7 +51,7 @@
   }
 }
 
-.gallery-slider__pagination {
+.gallery-slider__pagination.gallery-slider__pagination.gallery-slider__pagination.gallery-slider__pagination.gallery-slider__pagination {
   display: flex;
   align-items: center;
   justify-content: center;
