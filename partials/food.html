@@ -16,11 +16,11 @@
                 </div>
             </span>
         </div>
-        <form action="/" method="POST" class="food__form">
+        <form action="/" method="POST" class="food__form" data-need-validation="">
             <div class="food__form-amount">
                 <div class="food__form-amount-input-wrapper">
-                    <input type="number" class="food__form-amount-input"
-                        placeholder="Введите сумму не менее 200 рублей">
+                    <input type="number" class="food__form-amount-input" placeholder="Введите сумму не менее 200 рублей"
+                        required="">
                 </div>
                 <div class="food__form-amount-text">
                     Сумма по выбранным блюдам
@@ -183,6 +183,9 @@
                 </div>
                 <button class="food__form-submit" type="submit">
                     Добавить
+                </button>
+                <button class="food__form-added" type="button">
+                    Добавлено
                 </button>
             </div>
         </form>

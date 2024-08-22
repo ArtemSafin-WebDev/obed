@@ -134,6 +134,7 @@
   &:visited {
     color: #6f6f6f;
   }
+
   @include breakpoint(small-tablet) {
     font-style: normal;
     font-weight: 400;
@@ -173,8 +174,26 @@
       background-color: var(--primary-color);
     }
   }
+
+  &.inactive {
+    cursor: default;
+    pointer-events: none;
+    color: #6f6f6f;
+    .menu__calendar-item-desktop-day-of-the-week {
+      color: #6f6f6f;
+    }
+
+    .menu__calendar-item-desktop-date {
+      color: #6f6f6f;
+    }
+
+    &::before {
+      background-color: #cbd3d9;
+    }
+  }
   @media (hover: hover) {
-    &:not(.active):hover {
+    &:not(.active):not(.inactive):hover {
+      color: var(--primary-color);
       .menu__calendar-item-desktop-day-of-the-week {
         color: var(--primary-color);
       }
@@ -343,6 +362,12 @@
   grid-column: 2 / 5;
   display: flex;
   flex-direction: column;
+
+  @include breakpoint(small-tablet) {
+    .menu__tags {
+      display: none;
+    }
+  }
 
   .menu__row--business & {
     grid-column: 1 / 5;
@@ -1450,7 +1475,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: relative;
-    margin-bottom: 2.2rem;
+    margin-bottom: 3rem;
     z-index: 20;
   }
 
@@ -1784,6 +1809,7 @@
   display: grid;
   place-items: center;
   transition: background-color 0.2s;
+  cursor: default;
   svg {
     width: 1.74rem;
     height: 1.2rem;

@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (t.total <= 0) {
         clearInterval(timeinterval);
+        hours.textContent = Number(0).toString().padStart(2, "0");
+        minutes.textContent = Number(0).toString().padStart(2, "0");
+        seconds.textContent = Number(0).toString().padStart(2, "0");
       }
     }, 1000);
   });

@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const modal = document.querySelector(href);
       if (modal) {
+        const otherModals = Array.from(document.querySelectorAll(".js-modal"));
+        otherModals.forEach((modal) => modal.classList.remove("active"));
         openModal(modal);
       }
     }

@@ -1,12 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.addEventListener("click", (event) => {
-    if (
-      event.target.matches(".js-add-to-cart") ||
-      event.target.closest(".js-add-to-cart")
-    ) {
+  const wrappers = Array.from(
+    document.querySelectorAll(".js-add-to-cart-wrapper")
+  );
+
+  wrappers.forEach((wrapper) => {
+    const input = wrapper.querySelector('input[type="number"]');
+    const addToCartBtn = wrapper.querySelector(".js-add-to-cart");
+    input.addEventListener("change", () => {
+      console.log("Input change", input.value);
+      if (Number(input.value) === 0) {
+        wrapper.classList.remove("active");
+      }
+    });
+
+    addToCartBtn.addEventListener("click", (event) => {
       event.preventDefault();
-      const wrapper = event.target.closest(".js-add-to-cart-wrapper");
+      input.value = 1;
       wrapper.classList.add("active");
-    }
+    });
   });
 });

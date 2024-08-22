@@ -73,7 +73,7 @@
             <h3 class="modal__callback-title">
                 Заказать звонок
             </h3>
-            <form action="/" method="POST" class="modal__callback-form" data-need-validation="">
+            <form action="/" method="POST" class="modal__callback-form js-form" data-need-validation="">
                 <div class="modal__callback-form-fields">
                     <div class="modal__callback-form-field">
                         <input type="text" class="modal__callback-form-input" placeholder="Ваше имя*" required="">
@@ -104,6 +104,40 @@
                     Отправить
                 </button>
             </form>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="success-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__callback">
+            <h3 class="modal__callback-title">
+                Заявка успешно отправлена
+            </h3>
+            <div class="modal__callback-text">
+                Наш менеджер перезвонит вам в ближайшее время
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="error-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__callback">
+            <h3 class="modal__callback-title">
+                Произошла ошибка
+            </h3>
+            <div class="modal__callback-text">
+                Попробуйте заполнить форму снова
+            </div>
         </div>
     </div>
 </div>
@@ -146,10 +180,10 @@
                     </div>
                 </div>
                 <div class="modal__register-btns">
-                    <a href="#" class="modal__register-btn">
+                    <a href="#remember-modal" class="modal__register-btn js-open-modal">
                         Забыли пароль?
                     </a>
-                    <a href="#" class="modal__register-btn">
+                    <a href="#login-modal" class="modal__register-btn js-open-modal">
                         Авторизация
                     </a>
                 </div>
@@ -169,6 +203,68 @@
                 </div>
                 <button class="modal__callback-submit" type="submit">
                     Зарегистрироваться
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="login-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__callback">
+            <h3 class="modal__callback-title">
+                Войти в личный кабинет
+            </h3>
+            <form method="POST" action="/" class="modal__callback-form" data-need-validation="">
+                <div class="modal__callback-form-fields">
+
+                    <div class="modal__callback-form-field">
+                        <input type="email" class="modal__callback-form-input" placeholder="Email*" required="">
+                    </div>
+                    <div class="modal__callback-form-field">
+                        <input type="password" class="modal__callback-form-input" placeholder="Пароль*" required="">
+                    </div>
+                </div>
+                <div class="modal__register-btns">
+                    <a href="#remember-modal" class="modal__register-btn js-open-modal">
+                        Забыли пароль?
+                    </a>
+                    <a href="#register-modal" class="modal__register-btn js-open-modal">
+                        Регистрация
+                    </a>
+                </div>
+
+                <button class="modal__callback-submit" type="submit">
+                    Войти
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="remember-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__callback">
+            <h3 class="modal__callback-title">
+                Восстановить пароль
+            </h3>
+            <form method="POST" action="/" class="modal__callback-form" data-need-validation="">
+                <div class="modal__callback-form-fields">
+                    <div class="modal__callback-form-field">
+                        <input type="text" class="modal__callback-form-input" placeholder="Логин или e-mail"
+                            required="">
+                    </div>
+                </div>
+                <button class="modal__callback-submit" type="submit">
+                    Выслать
                 </button>
             </form>
         </div>
@@ -958,7 +1054,7 @@
                                 Успейте оформить доставку на завтра!
                             </div>
                             <div class="cart__order-checkout-timer-clock js-countdown-timer"
-                                data-deadline="August 22 2024">
+                                data-deadline="August 25 2024">
                                 <div class="cart__order-checkout-timer-clock-item">
                                     <div class="cart__order-checkout-timer-clock-item-amount js-hours">
 
