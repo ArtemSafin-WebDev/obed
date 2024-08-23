@@ -129,10 +129,10 @@
   font-size: 1.4rem;
   line-height: 120%;
   transition: background-color 0.2s;
-  color: #6f6f6f;
+  color: var(--text-color);
   &:link,
   &:visited {
-    color: #6f6f6f;
+    color: var(--text-color);
   }
 
   @include breakpoint(small-tablet) {
@@ -240,7 +240,7 @@
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 120%;
-  color: #6f6f6f;
+  color: var(--text-color);
 
   @include breakpoint(small-tablet) {
     font-style: normal;
@@ -258,7 +258,7 @@
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 120%;
-  color: #6f6f6f;
+  color: var(--text-color);
   transition: color 0.2s;
 
   @include breakpoint(small-tablet) {
@@ -1307,6 +1307,35 @@
   gap: 0.8rem;
 }
 
+.menu__order-dishes-card-title-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.menu__order-dishes-card-remove-btn {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-top: 0.2rem;
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: var(--primary-color);
+    transition: fill 0.2s;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      svg {
+        fill: var(--light-green);
+      }
+    }
+  }
+}
+
 .menu__order-dishes-card-title {
   font-style: normal;
   font-weight: 400;
@@ -1845,6 +1874,7 @@
   border: 1px solid #f3f6f8;
   border-radius: 0.8rem;
   flex-grow: 1;
+  position: relative;
 
   &.active {
     cursor: default;
@@ -1853,6 +1883,12 @@
       background-color: var(--light-green);
       color: white;
     }
+  }
+
+  .menu__business-card-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
   }
 
   @media (hover: hover) {
@@ -1981,6 +2017,8 @@
   margin-left: auto;
   width: 2.2rem;
   height: 2.2rem;
+  position: relative;
+  z-index: 6;
 
   @include breakpoint(mobile) {
     width: 2.2rem;
@@ -1991,6 +2029,15 @@
     width: 100%;
     height: 100%;
     fill: var(--primary-color);
+    transition: fill 0.2s;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      svg {
+        fill: var(--light-green);
+      }
+    }
   }
 }
 
