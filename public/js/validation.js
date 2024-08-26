@@ -66,6 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("form[data-need-validation]")
   );
 
+  if (!window.obedApi) {
+    window.obedApi = {};
+  }
+
+  window.obedApi.initFormValidation = (form) => $(form).parsley();
+
   formsToValidate.forEach((form) => {
     $(form).parsley();
   });

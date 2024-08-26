@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.addEventListener("click", (event) => {
+  const controller = new AbortController();
+  const signal = controller.signal;
+  document.addEventListener("click", async (event) => {
     if (
       event.target.matches(".counter__btn--minus") ||
       event.target.closest(".counter__btn--minus")
@@ -14,10 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
       if (+input.value - 1 < min) {
         return;
       }
-      input.value = +input.value - 1;
 
-      const changeEvent = new Event("change");
-      input.dispatchEvent(changeEvent);
+      try {
+        const response = await fetch("/", { signal });
+        if (!response.ok) throw new Error("Error when pressing plus");
+        input.value = +input.value - 1;
+
+        const changeEvent = new Event("change");
+        input.dispatchEvent(changeEvent);
+      } catch (err) {
+        console.log(err);
+        return;
+      }
     }
 
     if (
@@ -35,9 +45,17 @@ document.addEventListener("DOMContentLoaded", () => {
       if (counter.hasAttribute("data-max") && +input.value + 1 > max) {
         return;
       }
-      input.value = +input.value + 1;
-      const changeEvent = new Event("change");
-      input.dispatchEvent(changeEvent);
+
+      try {
+        const response = await fetch("/", { signal });
+        if (!response.ok) throw new Error("Error when pressing minus");
+        input.value = +input.value + 1;
+        const changeEvent = new Event("change");
+        input.dispatchEvent(changeEvent);
+      } catch (err) {
+        console.log(err);
+        return;
+      }
     }
   });
 });

@@ -26,4 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   elements.forEach((element) => initSlider(element));
+
+  if (!window.obedApi) {
+    window.obedApi = {};
+  }
+  window.obedApi.initBusinessSlider = initSlider;
 });

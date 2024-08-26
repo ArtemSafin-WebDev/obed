@@ -3,10 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     modal?.classList.add("active");
     document.body.classList.add("modal-open");
     document.body.classList.remove("menu-open");
+    const modalOpenEvent = new CustomEvent("modalopen");
+    document.dispatchEvent(modalOpenEvent);
   };
   const closeModal = (modal) => {
     modal?.classList.remove("active");
     document.body.classList.remove("modal-open");
+    const modalCloseEvent = new CustomEvent("modalclose");
+    document.dispatchEvent(modalCloseEvent);
   };
 
   document.addEventListener("click", (event) => {

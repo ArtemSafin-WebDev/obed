@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const forms = Array.from(document.querySelectorAll(".js-form"));
 
-  forms.forEach((form) => {
+  const initJsForm = (form) => {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       if ($(form).parsley().isValid()) {
@@ -38,5 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
           });
       }
     });
+  };
+
+  if (!window.obedApi) {
+    window.obedApi = {};
+  }
+  window.obedApi.initJsForm = initJsForm;
+
+  forms.forEach((form) => {
+    initJsForm(form);
   });
 });
