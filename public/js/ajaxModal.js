@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const nextPageHtml = parser.parseFromString(text, "text/html");
 
         const modal = nextPageHtml.querySelector(".page-main .modal");
+
         document.body.appendChild(modal);
         window.obedApi.initMasks(modal);
         const form = modal.querySelector("form[data-need-validation]");
@@ -42,6 +43,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         await new Promise((resolve) => setTimeout(resolve, 200));
+        Array.from(document.querySelectorAll(".js-modal")).forEach(
+          (otherModal) => {
+            if (otherModal === modal) {
+              return;
+            }
+            otherModal.classList.remove("active");
+          }
+        );
+        document.body.classList.remove("modal-open");
         modal.classList.add("active");
         document.body.classList.add("modal-open");
 

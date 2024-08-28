@@ -208,15 +208,16 @@
                                 </div>
                             </div>
                             <div class="checkout__components-card-controls">
+
                                 <div class="checkout__components-card-controls-title">
                                     Желаемое время доставки
                                 </div>
                                 <div class="checkout__components-card-controls-selects">
-                                    <div class="checkout__components-card-controls-select js-select">
+                                    <div class="checkout__components-card-controls-select js-select" id="hours-select">
                                         <button class="checkout__components-card-controls-select-btn" type="button">
                                             <span
                                                 class="checkout__components-card-controls-select-btn-text js-select-text">
-
+                                                Часы
                                             </span>
                                             <svg width="14" height="14" aria-hidden="true" class="icon-cross">
                                                 <use xlink:href="#select-arrow"></use>
@@ -230,7 +231,8 @@
                                                     <label class="checkout__components-card-controls-select-radio">
                                                         <input type="radio" name="time" value="10 часов"
                                                             class="checkout__components-card-controls-select-radio-input"
-                                                            checked="">
+                                                            required="" data-parsley-errors-container="#hours-select"
+                                                            data-parsley-class-handler="#hours-select">
                                                         <span
                                                             class="checkout__components-card-controls-select-radio-text">
                                                             10 часов
@@ -238,7 +240,9 @@
                                                     </label>
                                                     <label class="checkout__components-card-controls-select-radio">
                                                         <input type="radio" name="time" value="11 часов"
-                                                            class="checkout__components-card-controls-select-radio-input">
+                                                            class="checkout__components-card-controls-select-radio-input"
+                                                            required="" data-parsley-errors-container="#hours-select"
+                                                            data-parsley-class-handler="#hours-select">
                                                         <span
                                                             class="checkout__components-card-controls-select-radio-text">
                                                             11 часов
@@ -246,7 +250,9 @@
                                                     </label>
                                                     <label class="checkout__components-card-controls-select-radio">
                                                         <input type="radio" name="time" value="12 часов"
-                                                            class="checkout__components-card-controls-select-radio-input">
+                                                            class="checkout__components-card-controls-select-radio-input"
+                                                            required="" data-parsley-errors-container="#hours-select"
+                                                            data-parsley-class-handler="#hours-select">
                                                         <span
                                                             class="checkout__components-card-controls-select-radio-text">
                                                             12 часов
@@ -256,11 +262,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="checkout__components-card-controls-select js-select">
+                                    <div class="checkout__components-card-controls-select js-select"
+                                        id="minutes-select">
                                         <button class="checkout__components-card-controls-select-btn" type="button">
                                             <span
                                                 class="checkout__components-card-controls-select-btn-text js-select-text">
-
+                                                Минуты
                                             </span>
                                             <svg width="14" height="14" aria-hidden="true" class="icon-cross">
                                                 <use xlink:href="#select-arrow"></use>
@@ -274,7 +281,8 @@
                                                     <label class="checkout__components-card-controls-select-radio">
                                                         <input type="radio" name="minutes" value="00 минут"
                                                             class="checkout__components-card-controls-select-radio-input"
-                                                            checked="">
+                                                            required="" data-parsley-errors-container="#minutes-select"
+                                                            data-parsley-class-handler="#minutes-select">
                                                         <span
                                                             class="checkout__components-card-controls-select-radio-text">
                                                             00 минут
@@ -282,7 +290,9 @@
                                                     </label>
                                                     <label class="checkout__components-card-controls-select-radio">
                                                         <input type="radio" name="minutes" value="10 минут"
-                                                            class="checkout__components-card-controls-select-radio-input">
+                                                            class="checkout__components-card-controls-select-radio-input"
+                                                            required="" data-parsley-errors-container="#minutes-select"
+                                                            data-parsley-class-handler="#minutes-select">
                                                         <span
                                                             class="checkout__components-card-controls-select-radio-text">
                                                             10 минут
@@ -290,7 +300,9 @@
                                                     </label>
                                                     <label class="checkout__components-card-controls-select-radio">
                                                         <input type="radio" name="minutes" value="20 минут"
-                                                            class="checkout__components-card-controls-select-radio-input">
+                                                            class="checkout__components-card-controls-select-radio-input"
+                                                            required="" data-parsley-errors-container="#minutes-select"
+                                                            data-parsley-class-handler="#minutes-select">
                                                         <span
                                                             class="checkout__components-card-controls-select-radio-text">
                                                             20 минут
@@ -298,7 +310,9 @@
                                                     </label>
                                                     <label class="checkout__components-card-controls-select-radio">
                                                         <input type="radio" name="minutes" value="30 минут"
-                                                            class="checkout__components-card-controls-select-radio-input">
+                                                            class="checkout__components-card-controls-select-radio-input"
+                                                            required="" data-parsley-errors-container="#minutes-select"
+                                                            data-parsley-class-handler="#minutes-select">
                                                         <span
                                                             class="checkout__components-card-controls-select-radio-text">
                                                             30 минут
@@ -309,6 +323,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -454,6 +470,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="checkout__courier">
                     <h2 class="checkout__courier-title">
                         Доставка курьером
@@ -476,6 +493,9 @@
                         </li>
                     </ul>
                 </div>
+                <button class="checkout__components-card-submit" type="submit">
+                    Оформить
+                </button>
             </form>
 
         </div>
