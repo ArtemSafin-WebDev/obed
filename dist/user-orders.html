@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"
+        integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+        integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/customParseFormat.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_customParseFormat)</script>
+    <script src="/js/inputmask.js"></script>
+    <script src="/js/modals.js"></script>
+    <script src="/js/counters.js"></script>
+    <script src="/js/countdown.js"></script>
+    <script src="/js/addToCart.js"></script>
+    <script src="/js/menuViewModes.js"></script>
+    <script src="/js/fixedPanel.js"></script>
+    <script src="/js/masks.js"></script>
+    <script src="/js/validation.js"></script>
+    <script src="/js/selects.js"></script>
+    <script src="/js/businessSliders.js"></script>
+    <script src="/js/scrollToTop.js"></script>
+    <script src="/js/burger.js"></script>
+    <script src="/js/stats.js"></script>
+    <script src="/js/reviewsSlider.js"></script>
+    <script src="/js/partnersSlider.js"></script>
+    <script src="/js/foodForm.js"></script>
+    <script src="/js/form.js"></script>
+    <script src="/js/ajaxModal.js"></script>    <script type="module" crossorigin src="/assets/main22.js"></script>
+    <link rel="stylesheet" href="/assets/main.css">
+  </head>
+
+  <body>
+    <header class="page-header">
+        <div class="page-header__mobile-menu">
+    
+            <div class="page-header__mobile-menu-inner">
+    
+    
+                <div class="page-header__top">
+                    <div class="page-header__top-content">
+                        <div class="page-header__top-nav">
+                            <ul class="page-header__top-nav-list">
+                                <li class="page-header__top-nav-list-item">
+                                    <a href="#" class="page-header__top-nav-link">
+                                        Компания
+                                    </a>
+                                </li>
+                                <li class="page-header__top-nav-list-item">
+                                    <a href="#" class="page-header__top-nav-link">
+                                        Статьи
+                                    </a>
+                                </li>
+                                <li class="page-header__top-nav-list-item">
+                                    <a href="#" class="page-header__top-nav-link">
+                                        Бонусная программа
+                                    </a>
+                                </li>
+                                <li class="page-header__top-nav-list-item">
+                                    <a href="#" class="page-header__top-nav-link">
+                                        Доставка и оплата
+                                    </a>
+                                </li>
+                                <li class="page-header__top-nav-list-item">
+                                    <a href="#" class="page-header__top-nav-link">
+                                        Выездное питание
+                                    </a>
+                                </li>
+                                <li class="page-header__top-nav-list-item">
+                                    <a href="#" class="page-header__top-nav-link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="/callback-modal.html" class="page-header__callback js-open-ajax-modal">
+                            Заказать звонок
+                        </a>
+                        <div class="page-header__social-wrapper">
+    
+    
+                            <ul class="page-header__social-list">
+                                <li class="page-header__social-list-item">
+                                    <a href="#" class="page-header__social-link">
+                                        <img src="/images/telegram.svg" alt="" class="page-header__social-link-icon">
+                                    </a>
+                                </li>
+                                <li class="page-header__social-list-item">
+                                    <a href="#" class="page-header__social-link">
+                                        <img src="/images/skype.svg" alt="" class="page-header__social-link-icon">
+                                    </a>
+                                </li>
+                                <li class="page-header__social-list-item">
+                                    <a href="#" class="page-header__social-link">
+                                        <img src="/images/whatsapp.svg" alt="" class="page-header__social-link-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#register-modal" class="page-header__login-link js-open-modal">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#user"></use>
+                                </svg>
+                                Войти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-header__bottom">
+                    <div class="page-header__bottom-content">
+                        <div class="page-header__bottom-nav">
+                            <ul class="page-header__bottom-nav-list">
+                                <li class="page-header__bottom-nav-list-item">
+                                    <a href="#" class="page-header__bottom-nav-link">
+                                        <img src="/images/menu/1.svg" alt="" class="page-header__bottom-nav-link-icon">
+                                        <span class="page-header__bottom-nav-link-text">
+                                            Меню на Текущую
+                                            неделю
+    
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-header__bottom-nav-list-item">
+                                    <a href="#" class="page-header__bottom-nav-link">
+                                        <img src="/images/menu/2.svg" alt="" class="page-header__bottom-nav-link-icon">
+                                        <span class="page-header__bottom-nav-link-text">
+                                            Меню на следующую
+                                            неделю
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-header__bottom-nav-list-item">
+                                    <a href="#" class="page-header__bottom-nav-link">
+                                        <img src="/images/menu/3.svg" alt="" class="page-header__bottom-nav-link-icon">
+                                        <span class="page-header__bottom-nav-link-text">
+                                            Комплексные
+                                            обеды и бизнес-ланчи
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-header__bottom-nav-list-item">
+                                    <a href="#" class="page-header__bottom-nav-link">
+                                        <img src="/images/menu/4.svg" alt="" class="page-header__bottom-nav-link-icon">
+                                        <span class="page-header__bottom-nav-link-text">
+                                            Ресторанные
+                                            блюда
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-header__bottom-nav-list-item">
+                                    <a href="#" class="page-header__bottom-nav-link">
+                                        <img src="/images/menu/5.svg" alt="" class="page-header__bottom-nav-link-icon">
+                                        <span class="page-header__bottom-nav-link-text">
+                                            Праздничные
+                                            блюда
+                                        </span>
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-header__middle">
+            <div class="page-header__middle-content">
+                <a href="/" class="page-header__logo">
+                    <img src="/images/logo.svg" alt="" class="page-header__logo-image">
+                    <img src="/images/kakdoma.svg" alt="" class="page-header__home-image">
+                </a>
+                <div class="page-header__economy">
+                    Мы не экономим на Вашем здоровье!<br>
+                    Готовим <b>без ГМО и СОИ</b>
+                </div>
+                <a href="/callback-modal.html" class="page-header__tablet-callback js-open-ajax-modal">
+                    Заказать звонок
+                </a>
+                <div class="page-header__contacts">
+                    <div class="page-header__contacts-phones">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <ul class="page-header__contacts-phones-list">
+                            <li class="page-header__contacts-phones-list-item">
+                                <a href="tel:+74951201189" class="page-header__contacts-phones-link">
+                                    +7 (495) 120-11-89
+                                </a>
+                            </li>
+                            <li class="page-header__contacts-phones-list-item">
+                                <a href="tel:+79651059669" class="page-header__contacts-phones-link">
+                                    +7 (965) 105-96-69
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-header__contacts-schedule">
+                        пн.-вс.: с 08:00 до 20:00
+                    </div>
+                </div>
+                <a href="#cart-modal" class="page-header__cart js-open-modal">
+                    <span class="page-header__cart-amount">
+                        3/5000р.
+                    </span>
+                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                        <use xlink:href="#cart"></use>
+                    </svg>
+                </a>
+    
+            </div>
+        </div>
+        <button class="page-header__burger">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#burger-open"></use>
+            </svg>
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#burger-close"></use>
+            </svg>
+        </button>
+    
+    </header>    <main class="page-main">
+      <section class="user-account">
+          <div class="user-account__content">
+              <div class="page-top">
+                  <div class="breadcrumbs">
+                      <a href="#">
+                          Главная</a>
+                      <a href="#" class="active">
+                          Мои заказы</a>
+                  </div>
+                  <div class="sharing">
+                      <div class="sharing__btn">
+                          <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                              <use xlink:href="#social"></use>
+                          </svg>
+                      </div>
+                      <div class="sharing__dropdown">
+                          <div class="sharing__dropdown-inner">
+                              <div class="sharing__title">
+                                  Поделиться:
+                              </div>
+                              <ul class="sharing__list">
+                                  <li class="sharing__list-item">
+                                      <a href="#" class="sharing__link">
+                                          <img src="/images/sharing/1.svg" alt="" class="sharing__link-icon">
+                                      </a>
+                                  </li>
+                                  <li class="sharing__list-item">
+                                      <a href="#" class="sharing__link">
+                                          <img src="/images/sharing/2.svg" alt="" class="sharing__link-icon">
+                                      </a>
+                                  </li>
+                                  <li class="sharing__list-item">
+                                      <a href="#" class="sharing__link">
+                                          <img src="/images/sharing/3.svg" alt="" class="sharing__link-icon">
+                                      </a>
+                                  </li>
+                                  <li class="sharing__list-item">
+                                      <a href="#" class="sharing__link">
+                                          <img src="/images/sharing/4.svg" alt="" class="sharing__link-icon">
+                                      </a>
+                                  </li>
+                                  <li class="sharing__list-item">
+                                      <a href="#" class="sharing__link">
+                                          <img src="/images/sharing/5.svg" alt="" class="sharing__link-icon">
+                                      </a>
+                                  </li>
+                                  <li class="sharing__list-item">
+                                      <a href="#" class="sharing__link">
+                                          <img src="/images/sharing/6.svg" alt="" class="sharing__link-icon">
+                                      </a>
+                                  </li>
+                                  <li class="sharing__list-item">
+                                      <a href="#" class="sharing__link">
+                                          <img src="/images/sharing/7.svg" alt="" class="sharing__link-icon">
+                                      </a>
+                                  </li>
+                                  <li class="sharing__list-item">
+                                      <a href="#" class="sharing__link">
+                                          <img src="/images/sharing/8.svg" alt="" class="sharing__link-icon">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>        </div>
+      
+              <div class="user-account__inner">
+                  <h1 class="user-account__heading">
+                      Мои заказы
+                  </h1>
+                  <div class="user-account__row">
+                      <div class="user-account__left-col">
+                          <div class="user-account__nav">
+                              <ul class="user-account__nav-list">
+                                  <li class="user-account__nav-list-item">
+                                      <a href="#" class="user-account__nav-link ">
+                                          Личные данные
+                                      </a>
+                                  </li>
+                                  <li class="user-account__nav-list-item">
+                                      <a href="#" class="user-account__nav-link">
+                                          Информация о компании
+                                      </a>
+                                  </li>
+                                  <li class="user-account__nav-list-item">
+                                      <a href="#" class="user-account__nav-link active">
+                                          Мои заказы
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="user-account__right-col">
+                          <div class="user-account__orders">
+                              <h2 class="user-account__orders-heading">
+                                  Мои заказы
+                              </h2>
+                              <div class="user-account__orders-blocks">
+                                  <div class="user-account__orders-block">
+                                      <div class="user-account__orders-block-date">
+                                          Чт. 14.07.2024
+                                      </div>
+                                      <div class="user-account__orders-table">
+                                          <table>
+                                              <thead>
+                                                  <tr>
+                                                      <th>
+                                                          №
+                                                      </th>
+                                                      <th>
+                                                          Название блюда
+                                                      </th>
+                                                      <th>
+                                                          <span class="desktop-text">
+                                                              Количество
+                                                          </span>
+                                                          <span class="mobile-text">
+                                                              Кол-во
+                                                          </span>
+      
+                                                      </th>
+                                                      <th>
+                                                          Цена
+                                                      </th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          Зразы картофельные с овощным соусом Постн. 180/30
+                                                      </td>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          250 руб.
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          Зразы картофельные с овощным соусом Постн. 180/30
+                                                      </td>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          250 руб.
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          Зразы картофельные с овощным соусом Постн. 180/30
+                                                      </td>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          250 руб.
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          Зразы картофельные с овощным соусом Постн. 180/30
+                                                      </td>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          250 руб.
+                                                      </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </div>
+                                      <div class="user-account__orders-block-payment">
+                                          <div class="user-account__orders-block-payment-pending">
+                                              Ожидается оплата
+                                          </div>
+                                          <a href="#" class="user-account__orders-block-payment-link">
+                                              Оплатить
+                                          </a>
+                                          <div class="user-account__orders-block-payment-total">
+                                              Общая стоимость: 1000 руб.
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="user-account__orders-block">
+                                      <div class="user-account__orders-block-date">
+                                          Чт. 14.07.2024
+                                      </div>
+                                      <div class="user-account__orders-table">
+                                          <table>
+                                              <thead>
+                                                  <tr>
+                                                      <th>
+                                                          №
+                                                      </th>
+                                                      <th>
+                                                          Название блюда
+                                                      </th>
+                                                      <th>
+                                                          <span class="desktop-text">
+                                                              Количество
+                                                          </span>
+                                                          <span class="mobile-text">
+                                                              Кол-во
+                                                          </span>
+                                                      </th>
+                                                      <th>
+                                                          Количество
+                                                      </th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          Зразы картофельные с овощным соусом Постн. 180/30
+                                                      </td>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          250 руб.
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          Зразы картофельные с овощным соусом Постн. 180/30
+                                                      </td>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          250 руб.
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          Зразы картофельные с овощным соусом Постн. 180/30
+                                                      </td>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          250 руб.
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          Зразы картофельные с овощным соусом Постн. 180/30
+                                                      </td>
+                                                      <td>
+                                                          1
+                                                      </td>
+                                                      <td>
+                                                          250 руб.
+                                                      </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </div>
+                                      <div class="user-account__orders-block-payment">
+                                          <div class="user-account__orders-block-payment-pending">
+                                              Ожидается оплата
+                                          </div>
+                                          <a href="#" class="user-account__orders-block-payment-link">
+                                              Оплатить
+                                          </a>
+                                          <div class="user-account__orders-block-payment-total">
+                                              Общая стоимость: 1000 руб.
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="pagination">
+                              <a href="#" class="pagination__prev">
+                              </a>
+                              <div class="pagination__links">
+                                  <a href="#" class="current">
+                                      1
+                                  </a>
+                                  <a href="#">
+                                      2
+                                  </a>
+                                  <a href="#">
+                                      3
+                                  </a>
+                                  <a href="#">
+                                      ...
+                                  </a>
+                                  <a href="#">
+                                      20
+                                  </a>
+                              </div>
+                              <a href="#" class="pagination__next">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+          </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+    
+        <div class="page-footer__top-wrapper">
+    
+    
+            <div class="page-footer__top">
+                <div class="page-footer__top-left-col">
+                    <a href="#" class="page-footer__logo">
+                        <img src="/images/logo.svg" alt="" class="page-footer__logo-image">
+                    </a>
+                    <div class="page-footer__about">
+                        Мы работаем в сфере организации доставки обедов и кейтеринга с 1999 года и отладили образцовый
+                        сервис доставки готовых блюд в офис, а также вкусного и сытного питания экскурсионных групп и
+                        выездного обслуживания банкетов.
+                    </div>
+                    <div class="page-footer__copyright">
+                        © 1999 — 2023 «Ланч-Тайм», Москва
+                    </div>
+                    <div class="page-footer__address">
+                        125310, г. Москва, Ангелов пер,<br> дом № 2, кв.252
+                    </div>
+                </div>
+                <div class="page-footer__catalog">
+                    <div class="page-footer__catalog-block">
+                        <h3 class="page-footer__catalog-block-title">
+                            Каталог продукции
+                        </h3>
+                        <ul class="page-footer__catalog-list">
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Багеты и бургеры
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Блины с начинками
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Сэндвичи
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Кулинария в упаковке
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Весовые салаты
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Выпечка в групповой упаковке
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Завтраки
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Готовые вторые блюда
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Салаты 300 г
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Салаты и закуски
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Штучная выпечка
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-footer__catalog-block">
+                        <h3 class="page-footer__catalog-block-title">
+                            Каталог продукции
+                        </h3>
+                        <ul class="page-footer__catalog-list">
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Багеты и бургеры
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Блины с начинками
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Сэндвичи
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Кулинария в упаковке
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Весовые салаты
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Выпечка в групповой упаковке
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Завтраки
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Готовые вторые блюда
+                                </a>
+                            </li>
+                            <li class="page-footer__catalog-list-item">
+                                <a href="#" class="page-footer__catalog-link">
+                                    Салаты и закуски
+                                </a>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer__top-right-col">
+                    <div class="page-footer__contacts">
+                        <div class="page-footer__contacts-content">
+                            <div class="page-footer__contacts-phones">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                                <ul class="page-footer__contacts-phones-list">
+                                    <li class="page-footer__contacts-phones-list-item">
+                                        <a href="tel:+74951201189" class="page-footer__contacts-phones-link">
+                                            +7 (495) 120-11-89
+                                        </a>
+                                    </li>
+                                    <li class="page-footer__contacts-phones-list-item">
+                                        <a href="tel:+79651059669" class="page-footer__contacts-phones-link">
+                                            +7 (965) 105-96-69
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="page-footer__contacts-schedule">
+                                пн.-вс.: с 08:00 до 20:00
+                            </div>
+                            <a href="mailto:info@obed-office.ru" class="page-footer__contacts-email">info@obed-office.ru</a>
+                        </div>
+                        <ul class="page-footer__contacts-social-list">
+                            <li class="page-footer__contacts-social-list-item">
+                                <a href="#" class="page-footer__contacts-social-link">
+                                    <img src="/images/telegram.svg" alt="" class="page-footer__contacts-social-link-icon">
+                                </a>
+                            </li>
+                            <li class="page-footer__contacts-social-list-item">
+                                <a href="#" class="page-footer__contacts-social-link">
+                                    <img src="/images/skype.svg" alt="" class="page-footer__contacts-social-link-icon">
+                                </a>
+                            </li>
+                            <li class="page-footer__contacts-social-list-item">
+                                <a href="#" class="page-footer__contacts-social-link">
+                                    <img src="/images/mailru.svg" alt="" class="page-footer__contacts-social-link-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-footer__right-wrapper">
+    
+    
+                        <ul class="page-footer__payments-list">
+                            <li class="page-footer__payments-list-item">
+                                <div class="page-footer__payments-card">
+                                    <img src="/images/payments/1.svg" alt="" class="page-footer__payments-card-logo">
+                                </div>
+                            </li>
+                            <li class="page-footer__payments-list-item">
+                                <div class="page-footer__payments-card">
+                                    <img src="/images/payments/2.svg" alt="" class="page-footer__payments-card-logo">
+                                </div>
+                            </li>
+                            <li class="page-footer__payments-list-item">
+                                <div class="page-footer__payments-card">
+                                    <img src="/images/payments/3.svg" alt="" class="page-footer__payments-card-logo">
+                                </div>
+                            </li>
+                            <li class="page-footer__payments-list-item">
+                                <div class="page-footer__payments-card">
+                                    <img src="/images/payments/4.svg" alt="" class="page-footer__payments-card-logo">
+                                </div>
+                            </li>
+                            <li class="page-footer__payments-list-item">
+                                <div class="page-footer__payments-card">
+                                    <img src="/images/payments/5.svg" alt="" class="page-footer__payments-card-logo">
+                                </div>
+                            </li>
+                            <li class="page-footer__payments-list-item">
+                                <div class="page-footer__payments-card">
+                                    <img src="/images/payments/6.svg" alt="" class="page-footer__payments-card-logo">
+                                </div>
+                            </li>
+                            <li class="page-footer__payments-list-item">
+                                <div class="page-footer__payments-card">
+                                    <img src="/images/payments/7.svg" alt="" class="page-footer__payments-card-logo">
+                                </div>
+                            </li>
+                            <li class="page-footer__payments-list-item">
+                                <div class="page-footer__payments-card">
+                                    <img src="/images/payments/8.svg" alt="" class="page-footer__payments-card-logo">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="page-footer__subscribe">
+                            <form action="/" method="POST" class="page-footer__subscribe-form" data-need-validation="">
+                                <div class="page-footer__subscribe-form-wrapper">
+    
+                                    <input type="email" name="email" class="page-footer__subscribe-form-input" required=""
+                                        placeholder="Ваш e-mail">
+    
+                                    <button class="page-footer__subscribe-form-submit">
+                                        Подписаться
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <a href="#" class="page-footer__scroll-up">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#scroll-top"></use>
+                </svg>
+                Наверх
+            </a>
+        </div>
+        <div class="page-footer__bottom-wrapper">
+    
+    
+            <div class="page-footer__bottom">
+                <a href="#" class="page-footer__made-by">
+                    <img src="/images/madeby.webp" alt="" class="page-footer__made-by-logo">
+                    <span class="page-footer__made-by-text">
+                        Fortex-service.ru<br>
+                        разработка и продвижение
+                    </span>
+                </a>
+                <div class="page-footer__links">
+                    <a href="#" class="page-footer__link">
+                        Стандарты качества
+                    </a>
+                    <a href="#" class="page-footer__link">
+                        Политика конфеденциальности
+                    </a>
+                    <a href="#" class="page-footer__link">
+                        Политика возврата
+                    </a>
+                </div>
+                <div class="page-footer__social">
+                    <ul class="page-footer__social-list">
+                        <li class="page-footer__social-list-item">
+                            <a href="#" class="page-footer__social-link">
+                                <img src="/images/vk.svg" alt="" class="page-footer__social-link-logo">
+                            </a>
+                        </li>
+                        <li class="page-footer__social-list-item">
+                            <a href="#" class="page-footer__social-link">
+                                <img src="/images/youtube.svg" alt="" class="page-footer__social-link-logo">
+                            </a>
+                        </li>
+                        <li class="page-footer__social-list-item">
+                            <a href="#" class="page-footer__social-link">
+                                <img src="/images/ok.svg" alt="" class="page-footer__social-link-logo">
+                            </a>
+                        </li>
+                        <li class="page-footer__social-list-item">
+                            <a href="#" class="page-footer__social-link">
+                                <img src="/images/instagram.svg" alt="" class="page-footer__social-link-logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    
+    </footer>
+    <div class="modal js-modal" id="menu-modal">
+        <div class="modal__inner">
+            <button class="modal__close js-close-modal">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal__menu-modal">
+                <h3 class="modal__menu-modal-title">
+                    Скачать меню (.xls)
+                </h3>
+                <ul class="modal__menu-list">
+                    <li class="modal__menu-list-item">
+                        <a href="#" class="modal__menu-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#download"></use>
+                            </svg>
+                            Меню на день
+                        </a>
+                    </li>
+                    <li class="modal__menu-list-item">
+                        <a href="#" class="modal__menu-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#download"></use>
+                            </svg>
+                            Меню на эту неделю
+                        </a>
+                    </li>
+                    <li class="modal__menu-list-item">
+                        <a href="#" class="modal__menu-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#download"></use>
+                            </svg>
+                            Меню на следующую неделю
+                        </a>
+                    </li>
+                    <li class="modal__menu-list-item">
+                        <a href="#" class="modal__menu-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#download"></use>
+                            </svg>
+                            Меню на день от А до Я
+                        </a>
+                    </li>
+                    <li class="modal__menu-list-item">
+                        <a href="#" class="modal__menu-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#download"></use>
+                            </svg>
+                            Меню на эту неделю от А до Я
+                        </a>
+                    </li>
+                    <li class="modal__menu-list-item">
+                        <a href="#" class="modal__menu-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#download"></use>
+                            </svg>
+                            Меню на следующую неделю от А до Я
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal js-modal" id="success-modal">
+        <div class="modal__inner">
+            <button class="modal__close js-close-modal">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal__callback">
+                <h3 class="modal__callback-title">
+                    Заявка успешно отправлена
+                </h3>
+                <div class="modal__callback-text">
+                    Наш менеджер перезвонит вам в ближайшее время
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal js-modal" id="error-modal">
+        <div class="modal__inner">
+            <button class="modal__close js-close-modal">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal__callback">
+                <h3 class="modal__callback-title">
+                    Произошла ошибка
+                </h3>
+                <div class="modal__callback-text">
+                    Попробуйте заполнить форму снова
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal js-modal" id="register-modal">
+        <div class="modal__inner">
+            <button class="modal__close js-close-modal">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal__callback">
+                <h3 class="modal__callback-title">
+                    Зарегистрироваться
+                </h3>
+                <form method="POST" action="/" class="modal__callback-form" data-need-validation="">
+                    <div class="modal__callback-form-fields">
+                        <div class="modal__callback-form-field">
+                            <input type="text" class="modal__callback-form-input" placeholder="Название компании*"
+                                required="">
+                        </div>
+                        <div class="modal__callback-form-field">
+                            <input type="text" class="modal__callback-form-input" placeholder="Имя*" required="">
+                        </div>
+                        <div class="modal__callback-form-field">
+                            <input type="tel" class="modal__callback-form-input js-phone-input" placeholder="Телефон*"
+                                required="" data-parsley-phone="">
+                        </div>
+                        <div class="modal__callback-form-field">
+                            <input type="email" class="modal__callback-form-input" placeholder="Email*" required="">
+                        </div>
+                        <div class="modal__callback-form-field">
+                            <input type="password" class="modal__callback-form-input" placeholder="Пароль*" required="">
+                        </div>
+                        <div class="modal__callback-form-field">
+                            <input type="password" class="modal__callback-form-input" placeholder="Повтрите пароль*"
+                                required="">
+                        </div>
+                        <div class="modal__callback-form-field">
+                            <input type="text" class="modal__callback-form-input" placeholder="Адрес доставки*" required="">
+                        </div>
+                    </div>
+                    <div class="modal__register-btns">
+                        <a href="#remember-modal" class="modal__register-btn js-open-modal">
+                            Забыли пароль?
+                        </a>
+                        <a href="#login-modal" class="modal__register-btn js-open-modal">
+                            Авторизация
+                        </a>
+                    </div>
+                    <div class="modal__callback-policy">
+                        <label class="modal__callback-policy-checkbox">
+                            <input type="checkbox" name="your-policy" class="modal__callback-policy-checkbox-input"
+                                required="" checked="">
+                            <span class="modal__callback-policy-checkbox-mark">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            <span class="modal__callback-policy-checkbox-text">
+                                Отправляя форму вы принимаете <a href="#">условия передачи информации</a>
+                            </span>
+                        </label>
+                    </div>
+                    <button class="modal__callback-submit" type="submit">
+                        Зарегистрироваться
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal js-modal" id="login-modal">
+        <div class="modal__inner">
+            <button class="modal__close js-close-modal">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal__callback">
+                <h3 class="modal__callback-title">
+                    Войти в личный кабинет
+                </h3>
+                <form method="POST" action="/" class="modal__callback-form" data-need-validation="">
+                    <div class="modal__callback-form-fields">
+    
+                        <div class="modal__callback-form-field">
+                            <input type="email" class="modal__callback-form-input" placeholder="Email*" required="">
+                        </div>
+                        <div class="modal__callback-form-field">
+                            <input type="password" class="modal__callback-form-input" placeholder="Пароль*" required="">
+                        </div>
+                    </div>
+                    <div class="modal__register-btns">
+                        <a href="#remember-modal" class="modal__register-btn js-open-modal">
+                            Забыли пароль?
+                        </a>
+                        <a href="#register-modal" class="modal__register-btn js-open-modal">
+                            Регистрация
+                        </a>
+                    </div>
+    
+                    <button class="modal__callback-submit" type="submit">
+                        Войти
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal js-modal" id="remember-modal">
+        <div class="modal__inner">
+            <button class="modal__close js-close-modal">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal__callback">
+                <h3 class="modal__callback-title">
+                    Восстановить пароль
+                </h3>
+    
+                <form method="POST" action="/" class="modal__callback-form" data-need-validation="">
+                    <div class="modal__callback-form-fields">
+                        <div class="modal__callback-form-field">
+                            <input type="text" class="modal__callback-form-input" placeholder="Логин или e-mail"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="modal__remember-text">
+                        Контрольная строка для восстановления пароля, а также ваши регистрационные данные будут высланы вам
+                        на e-mail
+                    </div>
+                    <div class="modal__register-btns">
+                        <a href="#register-modal" class="modal__register-btn js-open-modal">
+                            Регистрация
+                        </a>
+                        <a href="#login-modal" class="modal__register-btn js-open-modal">
+                            Авторизация
+                        </a>
+                    </div>
+                    <button class="modal__callback-submit" type="submit">
+                        Выслать
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal js-modal" id="dish-modal">
+        <div class="modal__inner">
+            <button class="modal__close js-close-modal">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal__dish-modal">
+                <h3 class="modal__dish-modal-heading">
+                    Слойка с яблоком, 50 гр
+                </h3>
+                <div class="modal__dish-modal-image-wrapper">
+                    <img src="/images/dish-modal.webp" alt="" class="modal__dish-modal-image">
+                </div>
+                <div class="modal__dish-modal-row">
+                    <div class="modal__dish-modal-text-content">
+                        <h3 class="modal__dish-modal-name">
+                            Слойка с яблоком, 50 гр
+                        </h3>
+                        <div class="modal__dish-modal-ingredients">
+                            Состав: слоёное тесто, яблоко, сахар
+                        </div>
+                        <div class="modal__dish-modal-components">
+                            Вес: 50 гр, КБЖУ: 31.76 / 0.79 / 0.65 / 5.69
+                        </div>
+                        <div class="modal__dish-modal-add-to-cart js-add-to-cart-wrapper">
+                            <button class="modal__dish-modal-add-to-cart-btn js-add-to-cart" type="button">
+                                В корзину
+                            </button>
+                            <form method="POST" action="/" class="modal__dish-modal-add-to-cart-counter-wrapper">
+                                <div class="modal__dish-modal-add-to-cart-counter">
+                                    <div class="counter" data-min="1">
+                                        <button class="counter__btn counter__btn--minus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="counter__amount">
+                                            <input type="number" class="counter__amount-input" readonly="" value="1">
+                                        </div>
+                                        <button class="counter__btn counter__btn--plus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button class="modal__dish-modal-add-to-cart-counter-submit" type="submit">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#ok"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal__dish-modal-tags">
+                        <ul class="modal__dish-modal-tags-list">
+                            <li class="modal__dish-modal-tags-list-item">
+                                <div class="modal__dish-modal-tag">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#tags-7"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="modal__dish-modal-tags-list-item">
+                                <div class="modal__dish-modal-tag">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#tags-2"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="modal__dish-modal-tags-list-item">
+                                <div class="modal__dish-modal-tag">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#tags-8"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal js-modal" id="food-modal">
+        <div class="modal__inner modal__inner--food">
+            <button class="modal__close js-close-modal">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal__food">
+                <h3 class="modal__food-heading">
+                    Второе блюдо
+                </h3>
+                <div class="menu__business-slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="menu__business-card">
+                                    <div class="menu__business-card-image-container">
+                                        <img src="/images/menu-business/1.webp" alt="" class="menu__business-card-image">
+                                    </div>
+                                    <div class="menu__business-card-content">
+                                        <h3 class="menu__business-card-title">
+                                            Салат "Лайт" диетич. Постн. 100 гр.
+                                        </h3>
+                                        <div class="menu__business-card-components">
+                                            Вес: 350 гр, 155 ккал
+                                        </div>
+                                        <div class="menu__business-card-controls">
+                                            <div class="menu__business-card-price">
+                                                53 руб.
+                                            </div>
+    
+                                        </div>
+                                        <div class="menu__business-card-choose-btn">
+                                            Выбрать
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="menu__business-card">
+                                    <div class="menu__business-card-image-container">
+                                        <img src="/images/menu-business/2.webp" alt="" class="menu__business-card-image">
+                                    </div>
+                                    <div class="menu__business-card-content">
+                                        <h3 class="menu__business-card-title">
+                                            Зразы картофельные с овощным соусом Постн. 180/30
+                                        </h3>
+                                        <div class="menu__business-card-components">
+                                            Вес: 350 гр, 155 ккал
+                                        </div>
+                                        <div class="menu__business-card-controls">
+                                            <div class="menu__business-card-price">
+                                                125 руб.
+                                            </div>
+                                        </div>
+                                        <div class="menu__business-card-choose-btn">
+                                            Выбрать
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="menu__business-card">
+                                    <div class="menu__business-card-image-container">
+                                        <img src="/images/menu-business/3.webp" alt="" class="menu__business-card-image">
+                                    </div>
+                                    <div class="menu__business-card-content">
+                                        <h3 class="menu__business-card-title">
+                                            Хлеб белый, 1 шт.
+                                        </h3>
+                                        <div class="menu__business-card-components">
+                                            Вес: 350 гр, 155 ккал
+                                        </div>
+                                        <div class="menu__business-card-controls">
+                                            <div class="menu__business-card-price">
+                                                125 руб.
+                                            </div>
+    
+                                        </div>
+                                        <div class="menu__business-card-choose-btn">
+                                            Выбрать
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="menu__business-card">
+                                    <div class="menu__business-card-image-container">
+                                        <img src="/images/menu-business/4.webp" alt="" class="menu__business-card-image">
+                                    </div>
+                                    <div class="menu__business-card-content">
+                                        <h3 class="menu__business-card-title">
+                                            Хлеб черный, 1 шт.
+                                        </h3>
+                                        <div class="menu__business-card-components">
+                                            Вес: 350 гр, 155 ккал
+                                        </div>
+                                        <div class="menu__business-card-controls">
+                                            <div class="menu__business-card-price">
+                                                5 руб.
+                                            </div>
+    
+                                        </div>
+                                        <div class="menu__business-card-choose-btn">
+                                            Выбрать
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="menu__business-card">
+                                    <div class="menu__business-card-image-container">
+                                        <img src="/images/menu-business/5.webp" alt="" class="menu__business-card-image">
+                                    </div>
+                                    <div class="menu__business-card-content">
+                                        <h3 class="menu__business-card-title">
+                                            Приборы разовые набор: вилка, ложка, нож, салфетка
+                                        </h3>
+                                        <div class="menu__business-card-components">
+                                            Вес: 350 гр, 155 ккал
+                                        </div>
+                                        <div class="menu__business-card-controls">
+                                            <div class="menu__business-card-price">
+                                                5 руб.
+                                            </div>
+    
+                                        </div>
+                                        <div class="menu__business-card-choose-btn">
+                                            Выбрать
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="menu__business-card">
+                                    <div class="menu__business-card-image-container">
+                                        <img src="/images/menu-business/1.webp" alt="" class="menu__business-card-image">
+                                    </div>
+                                    <div class="menu__business-card-content">
+                                        <h3 class="menu__business-card-title">
+                                            Салат "Лайт" диетич. Постн. 100 гр.
+                                        </h3>
+                                        <div class="menu__business-card-components">
+                                            Вес: 350 гр, 155 ккал
+                                        </div>
+                                        <div class="menu__business-card-controls">
+                                            <div class="menu__business-card-price">
+                                                53 руб.
+                                            </div>
+    
+                                        </div>
+                                        <div class="menu__business-card-choose-btn">
+                                            Выбрать
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="menu__business-card">
+                                    <div class="menu__business-card-image-container">
+                                        <img src="/images/menu-business/2.webp" alt="" class="menu__business-card-image">
+                                    </div>
+                                    <div class="menu__business-card-content">
+                                        <h3 class="menu__business-card-title">
+                                            Зразы картофельные с овощным соусом Постн. 180/30
+                                        </h3>
+                                        <div class="menu__business-card-components">
+                                            Вес: 350 гр, 155 ккал
+                                        </div>
+                                        <div class="menu__business-card-controls">
+                                            <div class="menu__business-card-price">
+                                                125 руб.
+                                            </div>
+                                        </div>
+                                        <div class="menu__business-card-choose-btn">
+                                            Выбрать
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="menu__business-card">
+                                    <div class="menu__business-card-image-container">
+                                        <img src="/images/menu-business/3.webp" alt="" class="menu__business-card-image">
+                                    </div>
+                                    <div class="menu__business-card-content">
+                                        <h3 class="menu__business-card-title">
+                                            Хлеб белый, 1 шт.
+                                        </h3>
+                                        <div class="menu__business-card-components">
+                                            Вес: 350 гр, 155 ккал
+                                        </div>
+                                        <div class="menu__business-card-controls">
+                                            <div class="menu__business-card-price">
+                                                125 руб.
+                                            </div>
+    
+                                        </div>
+                                        <div class="menu__business-card-choose-btn">
+                                            Выбрать
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__business-slider-controls">
+                        <button class="menu__business-slider-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#slider-arrow-left"></use>
+                            </svg>
+                        </button>
+                        <div class="menu__business-slider-pagination">
+    
+                        </div>
+                        <button class="menu__business-slider-arrow">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#slider-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cart js-modal" id="cart-modal">
+        <div class="cart__inner">
+            <button class="cart__close js-close-modal">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <div class="cart__content">
+                <div class="cart__order">
+                    <h3 class="cart__order-name">
+                        Заказ на 13.04.2023
+                    </h3>
+                    <div class="cart__order-date">
+                        Принимается до 17:00
+                    </div>
+                </div>
+                <div class="cart__days">
+                    <div class="cart__days-wrapper">
+                        <a href="#" class="cart__days-btn">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#slider-arrow-left"></use>
+                            </svg>
+                        </a>
+                        <div class="cart__days-items">
+                            <a href="#" class="cart__day">
+                                ПН
+                            </a>
+                            <a href="#" class="cart__day">
+                                ВТ
+                            </a>
+                            <a href="#" class="cart__day">
+                                СР
+                            </a>
+                            <a href="#" class="cart__day">
+                                ЧТ
+                            </a>
+                            <a href="#" class="cart__day">
+                                ПТ
+                            </a>
+                            <a href="#" class="cart__day active">
+                                СБ
+                            </a>
+                            <a href="#" class="cart__day">
+                                ВС
+                            </a>
+                        </div>
+                        <a href="#" class="cart__days-btn">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#slider-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cart__row">
+                    <div class="cart__left-col">
+                        <div class="cart__order-dishes">
+                            <div class="cart__order-dishes-wrapper">
+                                <div class="cart__order-dishes-block">
+                                    <h3 class="cart__order-dishes-title">
+                                        Вторые блюда
+                                    </h3>
+                                    <ul class="cart__order-dishes-list">
+                                        <li class="cart__order-dishes-list-item">
+                                            <div class="cart__order-dishes-card">
+                                                <div class="cart__order-dishes-card-title-wrapper">
+    
+    
+                                                    <h4 class="cart__order-dishes-card-title">
+                                                        Конвертик с курицей и сыром сулугуни
+                                                    </h4>
+                                                    <button class="cart__order-dishes-card-remove-btn" type="button">
+                                                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                            <use xlink:href="#clear"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="cart__order-dishes-card-row">
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input" readonly=""
+                                                                value="1">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="cart__order-dishes-card-price">
+                                                        310 руб.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cart__order-dishes-list-item">
+                                            <div class="cart__order-dishes-card">
+    
+                                                <div class="cart__order-dishes-card-title-wrapper">
+    
+    
+                                                    <h4 class="cart__order-dishes-card-title">
+                                                        Шашлык куриный с баклажанами и гречневой лапшой
+                                                    </h4>
+                                                    <button class="cart__order-dishes-card-remove-btn" type="button">
+                                                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                            <use xlink:href="#clear"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="cart__order-dishes-card-row">
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input" readonly=""
+                                                                value="2">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="cart__order-dishes-card-price">
+                                                        320 руб.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cart__order-dishes-list-item">
+                                            <div class="cart__order-dishes-card">
+    
+                                                <div class="cart__order-dishes-card-title-wrapper">
+    
+    
+                                                    <h4 class="cart__order-dishes-card-title">
+                                                        Шашлык куриный с баклажанами и гречневой лапшой
+                                                    </h4>
+                                                    <button class="cart__order-dishes-card-remove-btn" type="button">
+                                                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                            <use xlink:href="#clear"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="cart__order-dishes-card-row">
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input" readonly=""
+                                                                value="2">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="cart__order-dishes-card-price">
+                                                        320 руб.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cart__order-dishes-list-item">
+                                            <div class="cart__order-dishes-card">
+    
+                                                <div class="cart__order-dishes-card-title-wrapper">
+    
+    
+                                                    <h4 class="cart__order-dishes-card-title">
+                                                        Шашлык куриный с баклажанами и гречневой лапшой
+                                                    </h4>
+                                                    <button class="cart__order-dishes-card-remove-btn" type="button">
+                                                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                            <use xlink:href="#clear"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="cart__order-dishes-card-row">
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input" readonly=""
+                                                                value="2">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="cart__order-dishes-card-price">
+                                                        320 руб.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                    </ul>
+                                </div>
+                                <div class="cart__order-dishes-block">
+                                    <h3 class="cart__order-dishes-title">
+                                        Салаты и закуски
+                                    </h3>
+                                    <ul class="cart__order-dishes-list">
+                                        <li class="cart__order-dishes-list-item">
+                                            <div class="cart__order-dishes-card">
+    
+                                                <div class="cart__order-dishes-card-title-wrapper">
+    
+    
+                                                    <h4 class="cart__order-dishes-card-title">
+                                                        Бутерброд с колбасой
+                                                    </h4>
+                                                    <button class="cart__order-dishes-card-remove-btn" type="button">
+                                                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                            <use xlink:href="#clear"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="cart__order-dishes-card-row">
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input" readonly=""
+                                                                value="2">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="cart__order-dishes-card-price">
+                                                        250 руб.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__right-col">
+                        <div class="cart__order-total">
+                            <div class="cart__order-total-amount">
+                                Сумма: 671 руб.
+                            </div>
+                            <div class="cart__order-total-quantity">
+                                Кол-во блюд: 4
+                            </div>
+                            <div class="cart__order-total-warning">
+                                Ваш заказ не оформлен!
+                            </div>
+                        </div>
+                        <div class="cart__order-checkout">
+                            <button class="cart__order-checkout-submit">
+                                Оформить
+                            </button>
+                            <div class="cart__order-checkout-timer">
+                                <div class="cart__order-checkout-timer-text">
+                                    Успейте оформить доставку на завтра!
+                                </div>
+                                <div class="cart__order-checkout-timer-clock js-countdown-timer"
+                                    data-deadline="August 25 2024">
+                                    <div class="cart__order-checkout-timer-clock-item">
+                                        <div class="cart__order-checkout-timer-clock-item-amount js-hours">
+    
+                                        </div>
+                                        <div class="cart__order-checkout-timer-clock-item-units">
+                                            час.
+                                        </div>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="cart__order-checkout-timer-clock-item">
+                                        <div class="cart__order-checkout-timer-clock-item-amount js-minutes">
+    
+                                        </div>
+                                        <div class="cart__order-checkout-timer-clock-item-units">
+                                            мин.
+                                        </div>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="cart__order-checkout-timer-clock-item">
+                                        <div class="cart__order-checkout-timer-clock-item-amount js-seconds">
+    
+                                        </div>
+                                        <div class="cart__order-checkout-timer-clock-item-units">
+                                            сек.
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </body>
+
+</html>
