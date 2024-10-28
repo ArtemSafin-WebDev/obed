@@ -66,6 +66,8 @@ body {
   font-family: var(--noto-sans);
   overscroll-behavior: none;
   overflow-anchor: none;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body.menu-open,

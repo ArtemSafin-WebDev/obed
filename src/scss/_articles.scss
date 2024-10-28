@@ -257,11 +257,11 @@
   flex-direction: column;
   gap: 3rem;
 
-  @include breakpointMF(small-tablet) {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-gap: 2rem;
-  }
+  // @include breakpointMF(small-tablet) {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, minmax(0, 1fr));
+  //   grid-gap: 2rem;
+  // }
 }
 
 .articles__read-also-list-item {
