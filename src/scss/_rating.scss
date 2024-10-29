@@ -1,0 +1,127 @@
+.rating {
+  position: relative;
+  isolation: isolate;
+  background-color: #e9f5f0;
+  @include blockWrapper;
+}
+
+.rating__content {
+  @include blockContent;
+  padding: 10.9rem 0;
+
+  @include breakpoint(small-tablet) {
+    padding-top: 4.9rem;
+    padding-bottom: 6.7rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-top: 3.9rem;
+    padding-bottom: 24.5rem;
+    min-height: 58.4rem;
+  }
+}
+
+.rating__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+  @include breakpoint(mobile) {
+    object-position: center bottom;
+  }
+}
+
+.rating__text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 120%;
+  margin-bottom: 3.8rem;
+  text-wrap: balance;
+  max-width: 60rem;
+
+  @include breakpoint(small-tablet) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.4rem;
+    line-height: 120%;
+    margin-bottom: 3.8rem;
+    max-width: 50rem;
+  }
+
+  @include breakpoint(mobile) {
+    margin-bottom: 3.8rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 120%;
+  }
+}
+
+.rating__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 120%;
+  margin-bottom: 3.8rem;
+  max-width: 54rem;
+  p {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include breakpoint(small-tablet) {
+    max-width: 35rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 120%;
+    margin-bottom: 3.8rem;
+  }
+
+  @include breakpoint(mobile) {
+    max-width: none;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 3.8rem;
+  }
+}
+
+.rating__link {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 120%;
+  padding: 1.7rem 5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 3rem;
+  text-align: center;
+  display: block;
+  user-select: none;
+  transition: background-color 0.2s, color 0.2s;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    align-self: center;
+  }
+}
