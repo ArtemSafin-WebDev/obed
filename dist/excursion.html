@@ -120,12 +120,34 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="#register-modal" class="page-header__login-link js-open-modal">
-                                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#user"></use>
-                                </svg>
-                                Войти
-                            </a>
+                            <div class="page-header__profile-wrapper">
+    
+    
+                                <button class="page-header__profile-btn">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#user"></use>
+                                    </svg>
+                                    Профиль
+                                </button>
+                                <div class="page-header__profile-dropdown">
+                                    <div class="page-header__profile-dropdown-inner">
+                                        <div class="page-header__profile-links">
+                                            <a href="#" class="page-header__profile-link">
+                                                Личные данные
+                                            </a>
+                                            <a href="#" class="page-header__profile-link">
+                                                Данные компании
+                                            </a>
+                                            <a href="#" class="page-header__profile-link">
+                                                Мои заказы
+                                            </a>
+                                        </div>
+                                        <a href="#" class="page-header__profile-exit">
+                                            Выйти
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,14 +254,43 @@
     
             </div>
         </div>
-        <button class="page-header__burger">
-            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
-                <use xlink:href="#burger-open"></use>
-            </svg>
-            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
-                <use xlink:href="#burger-close"></use>
-            </svg>
-        </button>
+        <div class="page-header__mobile-btns">
+    
+    
+            <button class="page-header__burger">
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#burger-open"></use>
+                </svg>
+                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#burger-close"></use>
+                </svg>
+            </button>
+            <div class="page-header__mobile-profile">
+                <button class="page-header__mobile-profile-btn" type="button">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                        <use xlink:href="#user"></use>
+                    </svg>
+                </button>
+                <div class="page-header__mobile-profile-dropdown">
+                    <div class="page-header__mobile-profile-dropdown-inner">
+                        <div class="page-header__mobile-profile-links">
+                            <a href="#" class="page-header__mobile-profile-link">
+                                Личные данные
+                            </a>
+                            <a href="#" class="page-header__mobile-profile-link">
+                                Данные компании
+                            </a>
+                            <a href="#" class="page-header__mobile-profile-link">
+                                Мои заказы
+                            </a>
+                        </div>
+                        <a href="#" class="page-header__mobile-profile-exit">
+                            Выйти
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     
     </header>    <main class="page-main">
       <section class="excursion">
