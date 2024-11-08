@@ -1,0 +1,485 @@
+<section class="user-account">
+    <div class="user-account__content">
+        <div class="page-top">
+            <div class="breadcrumbs">
+                <a href="#">
+                    Главная</a>
+                <a href="#" class="active">
+                    Мои заказы</a>
+            </div>
+            {{> sharing }}
+        </div>
+
+        <div class="user-account__inner">
+            <h1 class="user-account__heading">
+                Мои заказы
+            </h1>
+            <div class="user-account__row">
+                <div class="user-account__left-col">
+                    <div class="user-account__nav">
+                        <ul class="user-account__nav-list">
+                            <li class="user-account__nav-list-item">
+                                <a href="#" class="user-account__nav-link ">
+                                    Личные данные
+                                </a>
+                            </li>
+                            <li class="user-account__nav-list-item">
+                                <a href="#" class="user-account__nav-link">
+                                    Информация о компании
+                                </a>
+                            </li>
+                            <li class="user-account__nav-list-item">
+                                <a href="#" class="user-account__nav-link active">
+                                    Мои заказы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-account__right-col">
+                    <div class="user-account__orders">
+                        <h2 class="user-account__orders-heading">
+                            Мои заказы
+                        </h2>
+                        <div class="user-account__orders-blocks">
+                            <div class="user-account__orders-block">
+                                <div class="user-account__orders-block-date">
+                                    Чт. 14.07.2024
+                                </div>
+                                <div class="user-account__orders-new-table">
+                                    <table>
+                                        <thead>
+                                            <th>
+                                                Фото
+                                            </th>
+                                            <th>
+                                                Блюда
+                                            </th>
+                                            <th>
+                                                Количество
+                                            </th>
+                                            <th>
+                                                Цена
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-image-wrapper">
+                                                        <img src="/images/users-order-new-card.webp" alt=""
+                                                            class="user-account__orders-new-table-image">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-title">
+                                                        Зразы картофельные с овощным соусом Постн. 180/30
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input"
+                                                                readonly="" value="1">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-price-wrapper">
+                                                        <div class="user-account__orders-new-table-price">
+                                                            250 руб.
+                                                        </div>
+                                                        <button class="user-account__orders-new-table-remove">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#clear"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-image-wrapper">
+                                                        <img src="/images/users-order-new-card.webp" alt=""
+                                                            class="user-account__orders-new-table-image">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-title">
+                                                        Зразы картофельные с овощным соусом Постн. 180/30
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input"
+                                                                readonly="" value="1">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-price-wrapper">
+                                                        <div class="user-account__orders-new-table-price">
+                                                            250 руб.
+                                                        </div>
+                                                        <button class="user-account__orders-new-table-remove">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#clear"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-image-wrapper">
+                                                        <img src="/images/users-order-new-card.webp" alt=""
+                                                            class="user-account__orders-new-table-image">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-title">
+                                                        Зразы картофельные с овощным соусом Постн. 180/30
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input"
+                                                                readonly="" value="1">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-price-wrapper">
+                                                        <div class="user-account__orders-new-table-price">
+                                                            250 руб.
+                                                        </div>
+                                                        <button class="user-account__orders-new-table-remove">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#clear"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="user-account__orders-new-summary">
+                                    <button class="user-account__orders-new-add" type="button">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                            <use xlink:href="#add"></use>
+                                        </svg>
+                                        Добавить блюда
+                                    </button>
+                                    <button class="user-account__orders-new-save">
+                                        Сохранить изменения
+                                    </button>
+                                    <div class="user-account__orders-new-total-price">
+                                        Общая стоимость: 500 руб.
+                                    </div>
+                                </div>
+                                <a href="#" class="user-account__orders-new-pay">
+                                    Оплатить
+                                </a>
+
+                            </div>
+                            <div class="user-account__orders-block">
+                                <div class="user-account__orders-block-date">
+                                    Чт. 14.07.2024
+                                </div>
+                                <div class="user-account__orders-new-table">
+                                    <table>
+                                        <thead>
+                                            <th>
+                                                Фото
+                                            </th>
+                                            <th>
+                                                Блюда
+                                            </th>
+                                            <th>
+                                                Количество
+                                            </th>
+                                            <th>
+                                                Цена
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-image-wrapper">
+                                                        <img src="/images/users-order-new-card.webp" alt=""
+                                                            class="user-account__orders-new-table-image">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-title">
+                                                        Зразы картофельные с овощным соусом Постн. 180/30
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input"
+                                                                readonly="" value="1">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-price-wrapper">
+                                                        <div class="user-account__orders-new-table-price">
+                                                            250 руб.
+                                                        </div>
+                                                        <button class="user-account__orders-new-table-remove">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#clear"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-image-wrapper">
+                                                        <img src="/images/users-order-new-card.webp" alt=""
+                                                            class="user-account__orders-new-table-image">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-title">
+                                                        Зразы картофельные с овощным соусом Постн. 180/30
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="counter" data-min="1">
+                                                        <button class="counter__btn counter__btn--minus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="counter__amount">
+                                                            <input type="number" class="counter__amount-input"
+                                                                readonly="" value="1">
+                                                        </div>
+                                                        <button class="counter__btn counter__btn--plus" type="button">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-price-wrapper">
+                                                        <div class="user-account__orders-new-table-price">
+                                                            250 руб.
+                                                        </div>
+                                                        <button class="user-account__orders-new-table-remove">
+                                                            <svg width="14" height="14" aria-hidden="true"
+                                                                class="icon-cross">
+                                                                <use xlink:href="#clear"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="user-account__orders-new-summary">
+                                    <button class="user-account__orders-new-add" type="button">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                            <use xlink:href="#add"></use>
+                                        </svg>
+                                        Добавить блюда
+                                    </button>
+                                    <button class="user-account__orders-new-save" disabled="">
+                                        Сохранить изменения
+                                    </button>
+                                    <div class="user-account__orders-new-total-price">
+                                        Общая стоимость: 500 руб.
+                                    </div>
+                                </div>
+                                <div class="user-account__orders-new-pay-remark">
+                                    Оплата наличными / Оплата по счету
+                                </div>
+
+                            </div>
+                            <div class="user-account__orders-block">
+                                <div class="user-account__orders-block-date">
+                                    Чт. 14.07.2024
+                                </div>
+                                <div class="user-account__orders-new-table">
+                                    <table>
+                                        <thead>
+                                            <th>
+                                                Фото
+                                            </th>
+                                            <th>
+                                                Блюда
+                                            </th>
+                                            <th>
+                                                Количество
+                                            </th>
+                                            <th>
+                                                Цена
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-image-wrapper">
+                                                        <img src="/images/users-order-new-card.webp" alt=""
+                                                            class="user-account__orders-new-table-image">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-title">
+                                                        Зразы картофельные с овощным соусом Постн. 180/30
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-count">
+                                                        1
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-price-wrapper">
+                                                        <div class="user-account__orders-new-table-price">
+                                                            250 руб.
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-image-wrapper">
+                                                        <img src="/images/users-order-new-card.webp" alt=""
+                                                            class="user-account__orders-new-table-image">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-title">
+                                                        Зразы картофельные с овощным соусом Постн. 180/30
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-count">
+                                                        1
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-account__orders-new-table-price-wrapper">
+                                                        <div class="user-account__orders-new-table-price">
+                                                            250 руб.
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="user-account__orders-new-summary">
+                                    <div class="user-account__orders-new-ready">
+                                        Оплачен, формируется к отправке
+                                    </div>
+                                    <div class="user-account__orders-new-total-price">
+                                        Общая стоимость: 500 руб.
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a href="#" class="pagination__prev">
+                        </a>
+                        <div class="pagination__links">
+                            <a href="#" class="current">
+                                1
+                            </a>
+                            <a href="#">
+                                2
+                            </a>
+                            <a href="#">
+                                3
+                            </a>
+                            <a href="#">
+                                ...
+                            </a>
+                            <a href="#">
+                                20
+                            </a>
+                        </div>
+                        <a href="#" class="pagination__next">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

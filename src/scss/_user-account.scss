@@ -447,6 +447,10 @@ textarea.user-account__personal-data-input {
   line-height: 100%;
   color: var(--primary-color);
   margin-bottom: 3.4rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 2rem;
+  }
 }
 
 .user-account__orders-table {
@@ -473,7 +477,13 @@ textarea.user-account__personal-data-input {
         padding-bottom: 2.2rem;
         border-bottom: 1px solid #cbd3d9;
         padding-right: 2rem;
+        &:first-child {
+          min-width: 3rem;
+        }
 
+        &:last-child {
+          padding-right: 0;
+        }
         @include breakpoint(mobile) {
           font-style: normal;
           font-weight: 700;
@@ -484,13 +494,6 @@ textarea.user-account__personal-data-input {
           &:nth-child(4) {
             display: none;
           }
-        }
-        &:first-child {
-          min-width: 3rem;
-        }
-
-        &:last-child {
-          padding-right: 0;
         }
       }
 
@@ -651,5 +654,360 @@ textarea.user-account__personal-data-input {
 .mobile-text {
   @include breakpoint(mobile) {
     display: block;
+  }
+}
+
+.user-account__orders-new-table {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    @include breakpoint(mobile) {
+      display: block;
+    }
+
+    thead {
+      @include breakpoint(mobile) {
+        display: block;
+      }
+      th {
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #cbd3d9;
+        vertical-align: top;
+        padding-right: 2rem;
+
+        @include breakpoint(small-tablet) {
+          padding-right: 1.2rem;
+        }
+
+        @include breakpoint(mobile) {
+          display: block;
+          width: 100%;
+          &:not(:nth-child(2)) {
+            display: none;
+          }
+        }
+      }
+
+      tr {
+        @include breakpoint(mobile) {
+          display: block;
+        }
+      }
+    }
+
+    tbody {
+      @include breakpoint(mobile) {
+        display: block;
+      }
+      td {
+        vertical-align: middle;
+        padding: 2.2rem 0;
+        border-bottom: 1px solid #cbd3d9;
+
+        &:not(:last-child) {
+          padding-right: 2rem;
+          @include breakpoint(small-tablet) {
+            padding-right: 1.2rem;
+          }
+        }
+
+        @include breakpoint(mobile) {
+          display: block;
+          display: contents;
+          padding: 0;
+          border: none;
+        }
+      }
+
+      tr {
+        @include breakpoint(mobile) {
+          display: grid;
+          grid-template-columns: auto;
+          grid-gap: 1.5rem;
+          grid-row-gap: 0.8rem;
+          grid-template-areas: "image title" "counter price";
+          padding: 2.2rem 0;
+          border-bottom: 1px solid #cbd3d9;
+          .counter {
+            grid-area: counter;
+            align-self: center;
+            justify-self: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+.user-account__orders-new-table-image-wrapper {
+  width: 12rem;
+  height: 8rem;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  overflow: clip;
+
+  @include breakpoint(small-tablet) {
+    width: 9.8rem;
+    height: 5.9rem;
+  }
+
+  @include breakpoint(mobile) {
+    width: 9rem;
+    height: 6rem;
+    grid-area: image;
+    align-self: flex-start;
+  }
+}
+
+.user-account__orders-new-table-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-account__orders-new-table-title {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+
+  @include breakpoint(mobile) {
+    grid-area: title;
+    align-self: flex-start;
+    padding-right: 4rem;
+  }
+}
+
+.user-account__orders-new-table-price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 9rem;
+  width: 100%;
+  justify-content: space-between;
+
+  @include breakpoint(mobile) {
+    grid-area: price;
+    align-self: center;
+    justify-self: stretch;
+    min-width: none;
+  }
+}
+
+.user-account__orders-new-table-price {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.user-account__orders-new-table-remove {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: #007c0c;
+    transition: fill 0.2s;
+  }
+}
+
+.user-account__orders-new-summary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.2rem;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+    align-items: center;
+    grid-gap: 0.5rem;
+    grid-row-gap: 2.2rem;
+  }
+}
+
+.user-account__orders-new-add {
+  border-radius: 3rem;
+  border: 2px solid #f3f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.2rem 2.2rem;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+  svg {
+    flex-shrink: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: #007c0c;
+    transition: fill 0.2s;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: #007c0c;
+    }
+  }
+
+  @include breakpoint(small-tablet) {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 1.2rem 1.6rem;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    gap: 0.6rem;
+    padding: 1.1rem 0.8rem;
+  }
+}
+
+.user-account__orders-new-save {
+  border-radius: 3rem;
+  border: 2px solid #007c0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.2rem 2.2rem;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+  &[disabled] {
+    border-color: #f3f6f8;
+    color: #cbd3d9;
+    cursor: default;
+  }
+
+  @media (hover: hover) {
+    &:not([disabled]):hover {
+      background-color: #007c0c;
+      color: white;
+    }
+  }
+
+  @include breakpoint(small-tablet) {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 1.1rem 1.6rem;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    gap: 0.6rem;
+    padding: 1.1rem 0.8rem;
+  }
+}
+
+.user-account__orders-new-total-price {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-left: auto;
+  text-align: right;
+
+  @include breakpoint(small-tablet) {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  @include breakpoint(mobile) {
+    grid-column: 1 / -1;
+    text-align: right;
+    justify-self: flex-end;
+    order: -10;
+  }
+}
+
+.user-account__orders-new-pay {
+  padding: 2rem 5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 120%;
+  transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+  border: 2px solid var(--primary-color);
+  flex-shrink: 0;
+  border-radius: 5rem;
+  margin-top: 2.2rem;
+  align-self: flex-start;
+
+  @include breakpoint(small-tablet) {
+    padding: 1rem 4rem;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 1rem 4rem;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+  }
+}
+
+.user-account__orders-new-pay-remark {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-top: 2.2rem;
+}
+
+.user-account__orders-new-ready {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #007c0c;
+
+  @include breakpoint(mobile) {
+    grid-column: 1 / -1;
   }
 }
