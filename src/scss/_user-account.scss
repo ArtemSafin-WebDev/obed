@@ -728,7 +728,7 @@ textarea.user-account__personal-data-input {
       tr {
         @include breakpoint(mobile) {
           display: grid;
-          grid-template-columns: auto;
+          grid-template-columns: auto 1fr;
           grid-gap: 1.5rem;
           grid-row-gap: 0.8rem;
           grid-template-areas: "image title" "counter price";
