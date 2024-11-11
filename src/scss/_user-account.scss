@@ -659,16 +659,28 @@ textarea.user-account__personal-data-input {
 
 .user-account__orders-new-table {
   table {
+    display: block;
     width: 100%;
-    border-collapse: collapse;
 
-    @include breakpoint(mobile) {
-      display: block;
+    tr {
+      @include breakpointMF(small-tablet) {
+        display: grid;
+        grid-template-columns: 12rem 1fr 0.25fr 0.25fr;
+        grid-gap: 2rem;
+        align-items: center;
+        border-bottom: 1px solid #cbd3d9;
+      }
+
+      @include breakpoint(tablet) {
+        gap: 1.2rem;
+      }
     }
 
     thead {
+      display: block;
+
       @include breakpoint(mobile) {
-        display: block;
+        border-bottom: 1px solid #cbd3d9;
       }
       th {
         font-size: 1.4rem;
@@ -676,10 +688,8 @@ textarea.user-account__personal-data-input {
         font-weight: 700;
         line-height: 100%;
         padding-bottom: 2rem;
-        border-bottom: 1px solid #cbd3d9;
-        vertical-align: top;
-        padding-right: 2rem;
 
+        display: block;
         @include breakpoint(small-tablet) {
           padding-right: 1.2rem;
         }
@@ -701,20 +711,11 @@ textarea.user-account__personal-data-input {
     }
 
     tbody {
-      @include breakpoint(mobile) {
-        display: block;
-      }
+      display: block;
       td {
-        vertical-align: middle;
         padding: 2.2rem 0;
-        border-bottom: 1px solid #cbd3d9;
 
-        &:not(:last-child) {
-          padding-right: 2rem;
-          @include breakpoint(small-tablet) {
-            padding-right: 1.2rem;
-          }
-        }
+        display: block;
 
         @include breakpoint(mobile) {
           display: block;
