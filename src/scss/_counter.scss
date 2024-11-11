@@ -8,6 +8,15 @@
   background-color: #fff;
   transition: border-color 0.2s;
 
+  &.disabled {
+    pointer-events: none;
+    .counter__btn {
+      svg {
+        fill: #cbd3d9;
+      }
+    }
+  }
+
   @media (hover: hover) {
     &:hover {
       border-color: var(--light-green);
